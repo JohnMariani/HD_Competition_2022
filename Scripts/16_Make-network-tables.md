@@ -29,7 +29,3 @@ node_ipa <- rbind(node_ipa, tmp)
 # write.table(node_ipa, "output/networkNodes_de_filt_NH.txt", quote = FALSE, sep = "\t", row.names = FALSE)
 # write.table(edge_ipa, "output/networkEdges_de_filt_NH.txt", quote = FALSE, sep = "\t", row.names = FALSE)
 ```
-
-``` r
-sessionInfo()
-```
