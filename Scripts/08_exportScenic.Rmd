@@ -1,0 +1,56 @@
+---
+title: 'Export data to use as input for pySCENIC'
+author: "Nguyen Huynh"
+
+date: "12/14/2022"
+output: github_document
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding[utf8]{inputenc}
+abstract: "Required inputs for this script includes: RDS/mergedUpdated.rds, which is the single cell RNA seq seurat object that was generated from earlier script."
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, results = TRUE, eval = FALSE)
+```
+
+```{r}
+library(Seurat)
+object <- readRDS("RDS/mergedUpdated.rds")
+scenic <- object[["RNA"]]@counts
+dim(scenic)
+# Filter to retain only genes that are expressed more than minimal counts per gene threshold
+minCountsPerGene <- 3*0.01*ncol(scenic)
+sum <- apply(scenic, 1, sum)
+keep <- names(sum)[which(sum > minCountsPerGene)]
+# Filter to retain only genes that are expressed in more than the minimal number of cells
+minSamples <- ncol(scenic)*0.01
+zeros <- apply(scenic, 1, function(x) sum(x>0))
+keep2 <- names(zeros)[which(zeros > minSamples)]
+keep <- keep[keep %in% keep2]
+scenic <- as.matrix(scenic[keep,])
+# write.csv(scenic, "output/Competition_forScenic.csv", quote = FALSE)
+```
+
+```{r}
+## keep genes with total counts > 1
+total.counts <- apply(object[["RNA"]]@counts, 1, sum)
+keep <- names(total.counts)[which(total.counts >= 1)]
+## Write out for WGCNA 
+# write.csv(object[["RNA"]]@counts[keep, ], "output/Competition_forWGCNA.csv", quote=FALSE)
+```
+
+```{r}
+## Genes and cell info for DCA
+cells <- object@meta.data
+cells$X <- row.names(cells)
+# write.csv(cells, "output/DCA_cellInfo.csv", quote = FALSE)
+genes <- data.frame(row.names = keep, Gene = keep)
+# write.csv(genes, "output/DCA_geneInfo.csv", quote = FALSE)
+```
+
+```{r eval = TRUE}
+sessionInfo()
+```
+
+
