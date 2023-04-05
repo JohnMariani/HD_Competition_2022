@@ -1,0 +1,97 @@
+---
+title: "Generation of scRNA-seq Supplemental Figure"
+author: "John Mariani"
+date: "12/6/2022"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "..")
+```
+
+
+```{r, echo = TRUE, message=FALSE, warning=FALSE}
+library(Seurat)
+library(plyr)
+library(ggplot2)
+library(patchwork)
+library(scPlottingTools)
+
+```
+
+#Load and label data
+
+```{r}
+
+dimPlotColors <- c(cGPC = "green3", GPC = "orange1", "Immature Oligodendrocyte" = "royalblue2", APC = "brown3", Astrocyte = "purple3", NPC = "magenta")
+
+
+merged <- readRDS("RDS/mergedUpdated.rds")
+cellTypeOrder <- c("cGPC", "GPC", "Immature Oligodendrocyte", "NPC", "APC", "Astrocyte")
+merged$CellType <- factor(merged$CellType, levels = cellTypeOrder)
+
+
+supplementalLabels <- data.frame(SampleName = unique(merged$SampleName), supLabel = c("Young WT Ctr 1", "Young WT Isograft 1","Young WT Ctr 2",
+                                                                                      "Young WT Allograft 1", "Young WT Allograft 2", "Young WT Allograft 3",
+                                                                                      "Aged WT Ctr 1", "Aged WT Isograft 1", "HD Ctr 1",
+                                                                                      "HD Allograft 1", "HD Allograft 2"))
+supplementalLabels$SampleName
+
+
+
+merged$supLabel <- mapvalues(merged$SampleName, from = supplementalLabels$SampleName, to = supplementalLabels$supLabel)
+
+merged$supLabel <- factor(merged$supLabel, levels = c("Aged WT Ctr 1", "Aged WT Isograft 1", "HD Ctr 1", "HD Allograft 1", "HD Allograft 2", "Young WT Ctr 1", "Young WT Ctr 2", "Young WT Allograft 1", "Young WT Allograft 2", "Young WT Allograft 3", "Young WT Isograft 1"))
+
+
+extendedTheme <- theme(axis.text = element_text(size = 8), plot.title = element_text(size = 10))
+
+
+```
+
+# Plot Figure
+
+```{r}
+
+supDims <- DimPlotCustom(merged, split.by = "supLabel", nrow = 2, group.by = "CellType") & NoLegend() & scale_fill_manual(values = dimPlotColors) & extendedTheme & coord_flip() & scale_y_reverse()
+
+integratedSupDim <- DimPlotCustom(merged, group.by = "CellType") & NoLegend() & scale_fill_manual(values = dimPlotColors) & extendedTheme & coord_flip() & scale_y_reverse() & ggtitle("Integrated\n10410 Cells")
+
+
+supViolins <- VlnPlot(merged, group.by = "CellType", c("PDGFRA", "MKI67", "MBP", "AQP4", "GFAP", "STMN2"), pt.size = 0, cols = dimPlotColors) & theme(axis.title = element_blank()) & extendedTheme
+                                                                                                                                                  
+
+supViolins[[1]] <- supViolins[[1]] + theme(axis.text.x = element_blank())
+supViolins[[2]] <- supViolins[[2]] + theme(axis.text.x = element_blank())
+supViolins[[3]] <- supViolins[[3]] + theme(axis.text.x = element_blank())
+
+supViolins
+
+table(merged$supLabel)
+
+
+for(i in 1:11){
+  supDims[[i]]$labels$title <- paste0(supDims[[i]]$labels$title, "\n", table(merged$supLabel)[[i]], " Cells")
+}
+
+allDims <- (integratedSupDim | supDims[[1]] | supDims[[2]] | supDims[[3]] | supDims[[4]] | supDims[[5]]) /
+  (supDims[[6]] | supDims[[7]] | supDims[[8]] | supDims[[9]] | supDims[[10]] | supDims[[11]])
+
+allDims
+
+((supViolins / allDims) + plot_layout(heights = c(1,2)))
+
+
+ggsave("Figures/SupplementalData.pdf", width = 12, height = 9)
+
+
+
+```
+
+
+
+```{r}
+
+sessionInfo()
+```

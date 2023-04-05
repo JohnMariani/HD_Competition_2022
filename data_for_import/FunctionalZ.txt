@@ -1,0 +1,1468 @@
+© 2000-2023 QIAGEN. All rights reserved.
+
+Diseases and Bio Functions	WT.Adult.CtrlRescue.vs.WT.Adult.Alone.sig2 - 2023-02-07 03:42 PM	HD.Neonatal.Rescue.vs.HD.Neonatal.Alone.sig - 2022-12-10 05:35 PM	WT.Adult.Alone.vs.HD.Neonatal.Alone.sig - 2022-12-10 05:36 PM	WT.Adult.Alone.vs.WT.Neonatal.Alone.sig - 2022-12-10 05:36 PM	WT.Neonatal.CtrlRescue.vs.WT.Neonatal.Alone.sig - 2022-12-10 05:36 PM	WT.Adult.Rescue.vs.WT.Adult.Alone.sig - 2022-12-10 05:35 PM	WT.Adult.CtrlRescue.vs.WT.Neonatal.CtrlRescue.sig - 2022-12-10 05:35 PM	WT.Adult.Rescue.vs.HD.Neonatal.Rescue.sig - 2022-12-10 05:35 PM
+Cell death of osteosarcoma cells	-6.252	5.947	5.078	-5.425	-5.814	-4.271	-5.578	-4.0
+Cell death of cancer cells	-5.499	4.209	3.423	-4.536	-4.552	-3.433	-4.929	-3.362
+Cell death of tumor cells	-5.286	3.916	3.324	-4.244	-3.673	-3.601	-5.132	-2.945
+Viral Infection	5.505	-6.72	-5.993	0.166	2.205	3.454	1.907	0.557
+Necrosis of tumor	-5.131	3.788	N/A	-4.085	-3.673	-3.69	-4.97	N/A
+Organismal death	-3.893	6.367	6.803	-0.437	0.379	-3.683	-1.645	0.663
+Infection of cells	4.421	-6.27	-5.383	N/A	1.192	3.437	N/A	N/A
+Necrosis	-2.971	3.101	3.459	-2.005	-1.72	-3.103	-3.087	-1.243
+Infection by RNA virus	3.94	-5.971	-4.848	N/A	1.198	2.772	-0.065	N/A
+Cell survival	3.722	-5.345	-4.242	-0.55	1.219	1.753	0.532	-1.412
+Replication of virus	3.099	-3.338	-3.167	0.953	2.213	1.759	2.931	N/A
+Movement Disorders	-1.508	1.731	3.445	2.57	0.888	-4.515	1.454	0.424
+Cell viability	3.341	-4.909	-3.781	-0.513	1.092	1.388	0.441	-1.065
+Cell viability of tumor cell lines	2.829	-4.185	-3.56	-0.746	0.902	1.131	-1.068	-1.22
+Replication of RNA virus	3.124	-3.433	-3.334	0.984	2.602	1.754	N/A	N/A
+Cell-cell contact	N/A	N/A	-2.949	-3.755	-1.462	4.424	-0.765	-1.32
+Organization of cytoplasm	0.869	-3.062	-2.351	-0.156	-1.36	2.31	3.267	1.106
+Cancer	-2.388	0.002	-1.409	-3.096	-2.548	0.441	-1.696	-2.765
+Microtubule dynamics	1.002	-2.569	-2.175	-0.284	-1.156	2.667	3.231	1.204
+Organization of cytoskeleton	0.869	-2.882	-2.279	-0.156	-1.36	2.307	3.267	1.106
+Apoptosis	-2.307	2.975	3.169	0.22	-0.333	-2.814	-1.594	0.687
+Migration of cells	N/A	N/A	-4.66	1.159	-2.508	2.25	3.259	N/A
+Proliferation of neural cells	1.304	-3.302	-3.954	0.212	0.595	2.08	1.833	-0.549
+Replication of Influenza A virus	2.913	-3.0	-3.334	0.354	2.033	2.115	N/A	N/A
+Proliferation of neuronal cells	1.388	-3.131	-3.471	0.095	1.049	1.716	2.165	-0.728
+Cell movement	N/A	N/A	-4.519	0.93	-2.439	2.319	3.011	-0.146
+Outgrowth of neurites	1.665	-2.653	-3.571	-0.506	1.121	1.699	1.764	-0.353
+Growth of neurites	1.251	-3.113	-3.183	-0.645	1.014	1.838	1.778	-0.509
+Cell proliferation of tumor cell lines	1.751	-3.218	-3.845	-0.114	-0.812	1.266	1.297	-0.968
+Outgrowth of neurons	1.836	-2.506	-3.621	-0.351	1.293	1.692	1.889	N/A
+Formation of cellular protrusions	1.191	-1.494	-2.259	0.581	-0.569	2.536	3.635	0.701
+Development of neural cells	2.098	-0.579	-3.16	-0.735	-0.301	3.526	2.458	N/A
+Infection of tumor cell lines	4.15	-4.351	-4.082	N/A	N/A	N/A	N/A	N/A
+Development of neurons	1.826	-0.664	-2.805	-0.422	-0.316	3.064	2.402	0.718
+Outgrowth of cells	1.594	-2.645	-3.632	-0.048	0.626	1.627	1.994	-0.036
+Endocytosis	2.812	-3.234	-3.643	N/A	N/A	2.0	0.427	N/A
+Infection by HIV-1	2.735	-5.197	-3.905	N/A	N/A	N/A	N/A	N/A
+Infection of cervical cancer cell lines	3.57	-4.286	-3.973	N/A	N/A	N/A	N/A	N/A
+HIV infection	2.735	-5.197	-3.764	N/A	N/A	N/A	N/A	N/A
+Synthesis of protein	1.281	-3.363	-2.05	0.692	1.386	1.23	-0.257	1.324
+Cell transformation	0.746	-2.394	-2.921	-0.536	-1.634	1.703	1.419	N/A
+Cellular homeostasis	3.879	-3.557	-3.083	N/A	N/A	0.683	N/A	N/A
+Cell death of tumor cell lines	-1.423	2.22	2.131	-0.974	-0.257	-2.355	-1.755	N/A
+Engulfment of tumor cell lines	2.742	-3.146	-4.398	N/A	0.72	N/A	N/A	N/A
+Apoptosis of tumor cell lines	-1.505	2.279	2.213	-0.27	0.284	-2.574	-1.668	N/A
+Neuritogenesis	1.892	-0.353	-2.026	-0.38	-0.449	2.326	2.498	0.716
+Cell movement of tumor cell lines	N/A	N/A	-3.889	1.115	-1.933	1.275	2.421	N/A
+Development of central nervous system	1.388	-1.07	-2.859	0.433	-0.079	2.514	1.068	-0.723
+Growth of tumor	1.677	-2.593	N/A	0.088	-0.814	3.006	1.889	N/A
+Sprouting	1.772	N/A	-1.792	-0.921	-0.65	1.84	1.686	1.395
+Bone marrow neoplasm	1.342	-2.026	-2.637	-0.277	-0.555	2.143	1.067	N/A
+Invasive tumor	0.541	-2.784	-2.901	-0.159	-1.322	1.194	0.916	0.0
+Branching of cells	1.552	N/A	-1.226	-0.698	-1.218	1.534	2.27	1.243
+Motor dysfunction or movement disorder	N/A	1.55	3.719	N/A	N/A	-4.452	N/A	N/A
+Receptor-mediated endocytosis	1.671	-2.031	-3.116	N/A	N/A	2.653	0.095	N/A
+Endocytosis by eukaryotic cells	2.751	-3.059	-3.514	N/A	N/A	N/A	N/A	N/A
+Seizure disorder	-1.414	N/A	1.964	2.217	0.765	-1.929	0.947	N/A
+Engulfment of cells	2.766	-2.907	-3.54	N/A	N/A	N/A	N/A	N/A
+Invasion of cells	N/A	N/A	-3.417	1.264	N/A	1.616	2.89	N/A
+Developmental process of synapse	N/A	N/A	-3.004	N/A	N/A	3.948	-1.86	0.339
+Branching of neurites	1.723	N/A	-1.485	-0.654	0.044	1.633	1.898	1.423
+Axonogenesis	1.158	N/A	-1.99	-1.256	0.315	2.754	0.589	0.785
+Benign solid tumor	-2.887	0.513	-0.536	-0.371	-2.972	-0.755	0.799	N/A
+Infection by lentivirus	N/A	-5.083	-3.694	N/A	N/A	N/A	N/A	N/A
+Neoplasia of cells	0.475	N/A	-3.621	-0.273	-1.098	2.056	-0.123	-1.107
+Metabolism of protein	0.714	-3.031	-1.258	1.067	-0.048	0.974	0.466	1.111
+Renal tumor	1.897	-1.229	-2.146	-1.342	1.667	-0.378	N/A	N/A
+Genitourinary tumor	1.461	-0.558	-1.866	1.015	-1.204	0.654	1.112	-0.728
+Cancer of cells	N/A	N/A	-3.336	-0.695	-0.919	2.539	-1.045	N/A
+Myeloid neoplasm	0.816	-1.828	-2.637	-0.64	0.277	2.143	0.128	N/A
+Differentiation of oligodendrocytes	1.6	N/A	-2.838	-0.26	N/A	1.318	2.446	N/A
+Anogenital cancer	N/A	-1.903	-1.363	1.97	-1.197	0.447	1.387	N/A
+Size of body	N/A	-3.177	-4.948	N/A	N/A	N/A	N/A	N/A
+Migration of neural cells	0.882	N/A	-3.188	-0.423	0.628	1.696	0.746	-0.524
+Expression of mRNA	-0.984	1.158	1.401	-1.075	0.101	-0.965	-2.391	N/A
+Formation of solid tumor	-2.459	0.038	0.246	1.978	-2.296	-0.935	0.088	N/A
+Morphogenesis of nervous tissue	2.207	-0.25	-2.394	N/A	-0.332	2.833	N/A	N/A
+Branching of neurons	1.863	N/A	-1.579	-0.658	-0.111	1.923	1.879	N/A
+Infection of kidney cell lines	1.523	-3.641	-2.117	N/A	0.427	0.297	N/A	N/A
+Infection of epithelial cell lines	1.523	-3.737	-2.127	N/A	0.427	0.167	N/A	N/A
+Shape change of neurons	1.863	N/A	-1.579	-0.818	-0.111	1.9	1.692	N/A
+Non-melanoma solid tumor	-2.264	-1.07	-1.55	-0.184	-1.0	0.206	-0.167	-1.511
+Infection of embryonic cell lines	1.523	-3.756	-2.134	N/A	0.427	0.078	N/A	N/A
+Liquid tumor	0.896	-1.463	-2.263	-0.728	-0.152	1.818	0.555	N/A
+Breast or colorectal cancer	0.492	-1.644	-1.615	0.425	-1.122	1.1	1.455	N/A
+Benign lesion	-2.612	-0.02	-0.656	1.036	-1.777	N/A	1.737	N/A
+Renal cancer	1.414	-1.168	-1.717	-1.0	1.667	-0.816	N/A	N/A
+Anemia	-1.767	1.776	N/A	-0.064	-1.01	-1.576	-0.791	-0.61
+Urinary tract cancer	1.0	-0.718	-1.642	-1.0	1.265	-1.134	-0.762	N/A
+Genitourinary carcinoma	N/A	-1.723	-2.06	1.698	-0.901	-0.115	0.97	N/A
+Mammary tumor	1.335	-0.681	-1.528	0.895	-1.647	0.432	0.861	N/A
+Extracranial solid tumor	0.21	-1.733	-1.881	1.543	-0.177	0.651	1.016	-0.101
+Myeloid or lymphoid neoplasm	-0.264	-1.202	-1.331	-0.695	0.369	1.385	-0.985	-1.0
+Non-malignant disorder	-2.493	-0.128	-0.814	0.655	-1.312	-0.596	1.135	N/A
+Immune mediated inflammatory disease	-1.254	-1.664	N/A	0.216	-2.36	1.63	N/A	N/A
+Urinary tract tumor	1.508	-0.801	-1.85	-1.342	0.905	-0.707	N/A	N/A
+Clathrin mediated endocytosis	1.782	-2.414	-2.861	N/A	N/A	N/A	N/A	N/A
+Neoplasia of blood cells	-0.576	-1.187	-1.304	-0.506	0.26	1.238	-0.96	-1.0
+Advanced malignant tumor	0.429	-2.798	N/A	-0.162	-1.37	1.093	0.811	-0.353
+Metastasis	0.429	-2.798	N/A	-0.162	-1.37	1.069	0.811	-0.353
+Congenital neurological disorder	N/A	1.477	0.732	-2.27	0.55	-1.208	-0.752	N/A
+Expression of RNA	-1.489	0.734	1.954	0.209	-0.537	-0.316	0.518	-1.148
+Hematopoietic neoplasm	-0.063	-1.071	-1.562	-0.967	-0.214	1.762	-0.76	-0.447
+Metabolism of nucleoside triphosphate	1.437	-1.107	-1.373	N/A	1.846	1.069	N/A	N/A
+Transcription of DNA	-1.673	1.695	2.877	N/A	0.359	0.163	N/A	N/A
+Benign Tumors	-2.887	0.277	-0.536	N/A	-2.972	N/A	N/A	N/A
+Solid tumor	-0.414	-1.508	-2.067	0.522	-0.789	0.553	0.808	N/A
+Infection by Retroviridae	2.829	N/A	-3.823	N/A	N/A	N/A	N/A	N/A
+Malignant genitourinary solid tumor	0.16	-1.881	-2.221	0.966	0.034	-0.292	0.513	-0.577
+Apoptosis of neurons	-1.331	1.7	1.159	0.098	-0.1	-1.658	-0.593	N/A
+Translation of mRNA	-1.216	1.334	1.459	N/A	-0.912	N/A	-1.709	N/A
+Development of cytoplasm	N/A	-1.537	-3.183	0.466	N/A	1.429	N/A	N/A
+Cell cycle progression	0.936	-0.803	-0.646	1.249	-0.763	-0.536	1.677	N/A
+Development of head	0.499	N/A	-0.966	1.647	-0.079	1.356	1.428	0.566
+Renal lesion	0.961	-0.906	-0.609	0.084	1.546	-2.0	-0.378	N/A
+Amyloidosis	N/A	1.0	2.26	0.713	N/A	-2.365	-0.139	N/A
+Cognitive impairment	0.854	-0.333	-0.074	-1.922	1.485	0.234	-1.408	N/A
+Differentiation of neuroglia	0.912	N/A	-2.189	0.984	N/A	0.311	1.878	N/A
+Seizures	N/A	N/A	N/A	2.217	0.934	-1.861	1.206	N/A
+Transcription of RNA	-1.864	1.259	2.448	N/A	-0.221	-0.279	0.128	N/A
+Head and neck tumor	-1.969	-0.313	-0.688	-0.447	-1.067	1.6	-0.096	N/A
+Quantity of sensory neurons	2.204	N/A	N/A	-1.345	N/A	1.368	N/A	1.238
+Early-onset encephalopathy	N/A	1.913	0.946	-1.798	-0.552	-0.806	0.083	N/A
+Early-onset neurological disorder	N/A	1.913	0.946	-2.041	-0.307	-0.806	0.083	N/A
+Gastrointestinal tract cancer	N/A	-0.109	1.066	0.328	-1.961	1.163	1.455	N/A
+Hematologic cancer	-0.775	-0.905	-1.138	-0.412	0.124	0.576	-1.151	-1.0
+Growth failure or short stature	N/A	3.167	2.843	N/A	N/A	N/A	N/A	N/A
+Myelodysplastic syndrome or leukemia	0.152	-1.292	-1.97	-1.387	N/A	1.189	N/A	N/A
+Growth Failure	N/A	3.304	2.683	N/A	N/A	N/A	N/A	N/A
+Formation of plasma membrane	N/A	N/A	N/A	N/A	N/A	3.691	-1.846	-0.412
+Neurological signs	1.129	0.388	-0.799	N/A	2.003	-0.15	-1.468	N/A
+Neurotransmission	N/A	N/A	1.509	-1.499	-1.183	-1.407	N/A	-0.277
+Embryonal tumor	-1.98	-0.216	-0.612	N/A	-1.195	-0.577	1.287	N/A
+Invasion of tumor cell lines	N/A	N/A	N/A	1.761	N/A	1.657	2.417	N/A
+Liver tumor	N/A	-1.46	-1.341	0.13	1.031	-0.506	-1.356	N/A
+Hepatobiliary neoplasm	N/A	-1.46	-1.326	0.13	1.031	-0.52	-1.356	N/A
+Autophagy	N/A	-2.67	-3.102	N/A	N/A	N/A	N/A	N/A
+Growth of lesion	N/A	N/A	N/A	0.088	-0.814	2.981	1.889	N/A
+Transformation of fibroblast cell lines	0.431	-1.468	N/A	-0.278	-1.652	0.069	1.869	N/A
+Abdominal lesion	0.15	0.453	-0.497	2.019	0.209	-0.31	1.126	-0.996
+Cell proliferation of breast cancer cell lines	N/A	-3.224	N/A	N/A	N/A	2.522	N/A	N/A
+Pelvic tumor	N/A	N/A	0.527	1.662	-1.118	0.909	1.466	N/A
+Extension of cellular protrusions	-0.738	N/A	-0.161	-1.047	N/A	1.036	2.685	N/A
+Abdominal adenocarcinoma	N/A	-0.745	-0.399	2.138	1.022	0.532	0.816	N/A
+Nonhematologic malignant neoplasm	-1.659	-0.419	-0.395	0.086	-0.593	0.957	0.731	-0.78
+Autophagy of endoplasmic reticulum	2.309	-1.941	N/A	N/A	1.291	N/A	N/A	N/A
+Morphogenesis of neurons	N/A	-0.353	-2.026	-0.38	-0.449	2.326	N/A	N/A
+Extrapancreatic malignant tumor	-0.453	-0.992	-1.681	-0.422	0.132	-0.065	-0.407	-1.353
+Incidence of tumor	-1.861	-0.073	-0.258	0.843	-2.024	0.165	-0.275	N/A
+Processing of RNA	-0.552	-1.353	0.114	0.447	-0.484	0.816	1.732	N/A
+Cancer of secretory structure	-1.331	-1.06	-0.043	1.132	-0.513	0.857	0.555	N/A
+Adenocarcinoma	-1.183	-0.388	-0.094	2.91	0.079	-0.233	0.579	N/A
+Myeloid leukemia	N/A	-1.725	-2.352	N/A	N/A	1.387	N/A	N/A
+Synthesis of ATP	1.437	-1.107	N/A	N/A	1.846	1.069	N/A	N/A
+Transcription	-1.301	0.501	2.026	N/A	-0.32	-0.404	0.9	N/A
+Upper urinary tract tumor	N/A	-1.229	-2.146	N/A	1.667	-0.378	N/A	N/A
+Metabolism of reactive oxygen species	-0.936	1.387	N/A	-0.483	-2.566	N/A	N/A	N/A
+Breast or gastric cancer	-0.958	-1.185	-1.06	N/A	-1.663	-0.49	N/A	N/A
+Genitourinary adenocarcinoma	N/A	-1.471	-0.996	1.982	-0.899	N/A	N/A	N/A
+Development of cerebral cortex	0.816	N/A	N/A	N/A	0.333	1.977	-2.219	N/A
+Abdominal neoplasm	0.612	-0.819	-1.072	1.018	0.561	0.387	0.188	-0.626
+Development of body axis	N/A	N/A	-0.863	1.647	-0.233	1.092	1.428	N/A
+Proliferation of tumor cells	N/A	-2.727	N/A	N/A	N/A	2.485	N/A	N/A
+Sensitivity of tumor cell lines	0.971	1.136	-0.582	N/A	2.522	N/A	N/A	N/A
+Malignant solid tumor	-0.366	-1.26	-1.2	-0.739	-0.131	0.407	0.199	-0.908
+Transport of molecule	N/A	-0.94	-1.957	N/A	N/A	2.31	N/A	N/A
+Tumorigenesis of epithelial neoplasm	N/A	0.535	0.89	0.772	-1.589	-1.213	0.187	N/A
+Neuroinflammation	0.762	N/A	N/A	-1.764	N/A	1.496	N/A	-1.067
+Translation	1.042	-1.173	0.173	1.136	0.894	0.097	-0.572	N/A
+Tumorigenesis of tissue	-0.408	-0.732	-1.558	0.347	-0.571	0.655	0.389	-0.416
+Leukemia	N/A	N/A	-2.178	-1.387	N/A	1.504	N/A	N/A
+Internalization by tumor cell lines	2.111	-2.637	N/A	N/A	-0.319	N/A	N/A	N/A
+Disorder of basal ganglia	N/A	1.98	1.98	N/A	-1.104	N/A	N/A	N/A
+Bone marrow lesion	N/A	N/A	-2.81	N/A	0.342	1.902	N/A	N/A
+Non-hematological solid tumor	-2.163	0.134	-0.886	0.211	-0.831	0.285	0.495	N/A
+Malignant neoplasm of retroperitoneum	1.117	N/A	-1.459	-1.387	1.026	N/A	N/A	N/A
+B-cell lymphoma	N/A	N/A	1.786	1.0	-1.0	-1.175	N/A	N/A
+Genital tumor	N/A	N/A	0.488	1.662	-0.585	1.141	1.071	N/A
+Hepatobiliary carcinoma	N/A	0.51	0.497	0.0	1.004	-0.853	-2.025	N/A
+Bone marrow cancer	N/A	-1.726	-2.214	N/A	N/A	0.928	N/A	N/A
+Intraabdominal organ tumor	0.809	-0.957	-1.039	0.587	0.799	0.493	-0.162	N/A
+Generation of tumor	N/A	-0.535	0.393	1.274	-1.137	-1.013	-0.487	N/A
+Biosynthesis of purine ribonucleotide	1.69	N/A	N/A	N/A	2.068	1.069	N/A	N/A
+Migration of tumor cell lines	N/A	N/A	N/A	1.047	N/A	1.225	2.554	N/A
+Activation of peripheral blood neutrophils	-2.408	2.397	N/A	N/A	N/A	N/A	N/A	N/A
+Gastrointestinal carcinoma	N/A	0.6	2.214	0.328	N/A	0.808	0.849	N/A
+Breast cancer	N/A	-1.782	-1.914	N/A	-1.095	0.0	N/A	N/A
+Migration of lung cancer cell lines	1.311	N/A	N/A	N/A	N/A	2.218	N/A	-1.195
+Inflammation of joint	1.373	-0.55	N/A	-0.101	0.416	-0.281	1.98	N/A
+Carcinoma	-1.142	-0.667	-0.528	0.328	-0.325	0.452	-0.499	-0.754
+Cell viability of stomach cancer cell lines	3.606	N/A	N/A	N/A	N/A	N/A	N/A	-1.069
+Progression of tumor	N/A	-1.958	N/A	-1.387	N/A	0.678	-0.632	N/A
+Differentiation of neural cells	-0.023	N/A	-2.297	0.141	N/A	1.724	0.429	N/A
+Familial neurological disorder	0.816	0.0	-1.0	N/A	1.89	-0.896	N/A	N/A
+Quantity of neurons	1.059	-0.103	0.156	-0.597	-1.075	0.362	0.516	-0.73
+Systemic autoimmune syndrome	-1.98	-0.218	N/A	1.131	-0.155	N/A	1.076	N/A
+Proliferation of fibroblast cell lines	0.516	-1.303	N/A	N/A	-0.584	1.035	1.119	N/A
+Development of carcinoma	N/A	0.285	1.022	0.905	-0.941	-0.925	-0.473	N/A
+Growth of organism	N/A	N/A	-2.867	N/A	N/A	1.682	N/A	N/A
+Lymphoreticular neoplasm	0.103	-1.311	-0.842	0.233	0.117	1.0	-0.467	-0.447
+Synthesis of reactive oxygen species	-1.497	N/A	N/A	N/A	-2.999	N/A	N/A	N/A
+Catabolism of protein	-0.609	-0.861	0.256	0.822	-1.867	0.071	N/A	N/A
+Dendritic growth/branching	0.569	N/A	-0.519	-0.411	N/A	N/A	1.742	1.201
+Apoptosis of lung cancer cell lines	-2.5	1.891	N/A	N/A	N/A	N/A	N/A	N/A
+Quantity of cells	N/A	N/A	N/A	1.379	N/A	1.319	1.129	-0.56
+Formation of focal adhesions	1.115	-2.216	N/A	0.661	N/A	0.39	N/A	N/A
+Breast or ovarian cancer	N/A	-1.782	-1.49	N/A	-1.095	0.0	N/A	N/A
+Multiple cancers	N/A	-1.782	-1.49	N/A	-1.095	0.0	N/A	N/A
+Cell movement of cancer cells	N/A	N/A	N/A	-0.903	N/A	2.917	0.535	N/A
+Hematological or lymphatic system tumor	-0.407	-0.907	-1.467	N/A	-0.412	1.147	N/A	N/A
+Sensitivity of cells	0.498	1.658	-0.04	N/A	2.132	N/A	N/A	N/A
+Frequency of tumor	N/A	0.148	0.455	0.514	-2.309	-0.513	-0.371	N/A
+Head and neck cancer	-1.987	-0.91	0.047	N/A	N/A	1.114	0.221	N/A
+Endocytosis by tumor cell lines	1.777	-2.284	N/A	N/A	-0.215	N/A	N/A	N/A
+Atrophy of organ	N/A	2.385	N/A	N/A	0.883	N/A	N/A	-1.0
+Development of malignant tumor	N/A	-0.374	0.623	0.735	-1.122	-0.665	-0.744	N/A
+Liver carcinoma	N/A	N/A	0.427	0.0	1.004	-0.771	-2.025	N/A
+Genital tract cancer	N/A	N/A	0.25	1.709	-0.555	0.64	1.067	N/A
+Advanced extracranial solid tumor	0.327	N/A	N/A	-1.98	-0.155	N/A	-1.732	N/A
+Liver cancer	N/A	N/A	-0.216	-0.105	0.73	-1.124	-1.937	N/A
+Hepatobiliary system cancer	N/A	N/A	-0.178	-0.105	0.73	-1.158	-1.937	N/A
+Malignant neoplasm of male genital organ	N/A	N/A	-0.727	1.709	-0.555	N/A	1.067	N/A
+Vasculogenesis	1.603	N/A	N/A	0.313	N/A	1.155	N/A	-0.987
+Prostate cancer	N/A	N/A	-0.727	1.709	-0.555	N/A	1.067	N/A
+Ubiquitination of protein	N/A	-2.622	-1.407	N/A	N/A	N/A	N/A	N/A
+Neuronal cell death	-0.355	-0.494	0.221	0.578	0.393	-0.747	0.328	0.888
+Cognition	0.084	N/A	-0.82	-0.393	0.204	0.797	-0.276	-1.411
+Degradation of hydrogen peroxide	1.982	-1.982	N/A	N/A	N/A	N/A	N/A	N/A
+Cell movement of lung cancer cell lines	0.74	N/A	N/A	N/A	N/A	1.745	N/A	-1.463
+Sensory system development	N/A	N/A	N/A	-0.27	N/A	1.75	1.927	N/A
+Myelination	N/A	0.137	-1.114	N/A	N/A	0.852	1.807	N/A
+Extension of neurites	N/A	N/A	-0.211	0.146	N/A	0.766	2.562	0.213
+Pelvic cancer	N/A	N/A	0.496	1.709	N/A	0.239	1.432	N/A
+Insulin resistance	-1.023	1.116	N/A	-1.048	-0.107	N/A	0.566	N/A
+Organization of organelle	N/A	-1.003	-1.033	N/A	N/A	1.505	0.294	N/A
+Differentiation of oligodendrocyte precursor cells	1.714	N/A	N/A	0.104	N/A	N/A	1.997	N/A
+Extraadrenal retroperitoneal tumor	N/A	N/A	-1.075	0.525	1.567	N/A	-0.647	N/A
+Locomotion	N/A	N/A	1.348	-0.616	-0.922	-0.913	N/A	N/A
+Glucose metabolism disorder	-1.677	N/A	N/A	-0.125	0.503	N/A	0.632	0.798
+Expression of protein	0.25	-0.871	0.183	0.601	0.165	0.168	-0.66	0.78
+Protein kinase cascade	N/A	-3.674	N/A	N/A	N/A	N/A	N/A	N/A
+Progressive neurological disorder	0.442	-0.78	0.27	0.232	0.4	-0.531	-1.0	N/A
+Cell death of lung cancer cell lines	-2.274	1.373	N/A	N/A	N/A	N/A	N/A	N/A
+Survival of stem cell lines	N/A	-3.638	N/A	N/A	N/A	N/A	N/A	N/A
+Malignant neoplasm of respiratory system	N/A	N/A	-1.129	-0.552	-0.306	0.667	-0.976	N/A
+Shape change of neurites	N/A	N/A	-1.732	-0.814	N/A	N/A	N/A	1.066
+Breast or pancreatic cancer	-0.132	N/A	-1.362	N/A	-1.292	0.812	N/A	N/A
+Learning	0.311	N/A	-0.44	-0.54	0.244	0.659	-0.493	-0.894
+Formation of brain	-0.102	N/A	-0.403	N/A	-0.851	1.582	-0.638	N/A
+Congenital malformation of brain	N/A	1.913	0.834	N/A	-0.811	N/A	N/A	N/A
+Abdominal carcinoma	-1.561	-0.013	0.819	0.207	-0.24	-0.078	-0.637	N/A
+Advanced lung cancer	0.327	-0.693	N/A	N/A	-0.155	0.626	-1.732	N/A
+Malignant myeloid neoplasm	N/A	-1.471	-1.601	N/A	N/A	0.447	N/A	N/A
+Senescence of cells	N/A	1.953	N/A	N/A	-0.977	N/A	0.555	N/A
+Development of adenocarcinoma	N/A	N/A	-0.035	2.407	-0.067	-0.494	0.478	N/A
+Internalization of protein	-1.136	-1.964	-0.356	N/A	N/A	N/A	N/A	N/A
+Lung cancer	N/A	N/A	-1.129	-0.552	-0.306	0.487	-0.976	N/A
+Translation of protein	0.456	-0.564	0.482	0.397	0.317	-0.383	-0.851	N/A
+Cerebral amyloid angiopathy	N/A	N/A	N/A	1.718	N/A	-1.718	N/A	N/A
+Growth of axons	0.929	N/A	-0.129	N/A	N/A	N/A	2.36	N/A
+Growth of connective tissue	0.74	-0.416	N/A	-0.669	0.134	1.14	-0.312	N/A
+Rheumatic Disease	0.595	-0.55	N/A	-0.016	-0.172	0.091	1.98	N/A
+Acute myeloid leukemia	N/A	-1.455	-1.941	N/A	N/A	N/A	N/A	N/A
+G1 phase	N/A	N/A	N/A	N/A	-1.88	N/A	-1.509	N/A
+Development of neuroglia	N/A	1.068	N/A	-0.555	N/A	1.731	N/A	N/A
+Quantity of vacuole	-2.0	N/A	N/A	N/A	-1.342	N/A	N/A	N/A
+Mitosis	1.066	0.504	N/A	N/A	-0.898	N/A	0.852	N/A
+Pelvic carcinoma	N/A	N/A	0.97	1.067	N/A	-0.152	1.131	N/A
+Malignant neoplasm of large intestine	N/A	N/A	-0.137	-0.025	N/A	1.98	1.172	N/A
+Colorectal cancer	N/A	N/A	-0.137	-0.025	N/A	1.98	1.172	N/A
+Development of digestive organ tumor	N/A	N/A	1.832	0.508	-0.671	-0.287	N/A	N/A
+Familial congenital malformation	N/A	N/A	1.266	N/A	N/A	0.629	-1.372	N/A
+Primitive neuroectodermal tumor	-1.98	N/A	N/A	N/A	N/A	N/A	1.287	N/A
+Metabolism of hydrogen peroxide	1.852	-1.411	N/A	N/A	N/A	N/A	N/A	N/A
+Tremor	-0.829	N/A	N/A	N/A	N/A	-2.401	N/A	N/A
+Acute leukemia	N/A	-1.369	-1.816	N/A	N/A	N/A	N/A	N/A
+Migration of carcinoma cell lines	0.704	N/A	N/A	N/A	N/A	2.445	N/A	N/A
+G1 phase of tumor cell lines	0.728	N/A	N/A	N/A	-1.664	N/A	-0.728	N/A
+Non-Hodgkin lymphoma	-1.067	N/A	0.656	0.164	-0.756	-0.463	N/A	N/A
+Gastrointestinal tumor	N/A	0.582	1.079	N/A	-1.315	-0.127	N/A	N/A
+Formation of stress granule	-1.455	1.633	N/A	N/A	N/A	N/A	N/A	N/A
+Response of tumor cell lines	N/A	-1.736	N/A	N/A	N/A	1.326	N/A	N/A
+Digestive organ tumor	N/A	-1.148	-0.199	0.612	0.528	-0.043	-0.527	N/A
+Nervous system neoplasm	N/A	N/A	-0.562	0.68	-0.882	-0.915	N/A	N/A
+Binding of DNA	1.4	-1.193	N/A	N/A	N/A	N/A	-0.416	N/A
+Liver lesion	N/A	0.032	-0.814	1.36	0.231	-0.384	0.172	N/A
+Respiratory system tumor	N/A	N/A	-1.354	-0.418	-0.445	0.765	N/A	N/A
+Folding of protein	0.943	N/A	-0.822	N/A	N/A	1.195	N/A	N/A
+Tumorigenesis of gastrointestinal tumor	N/A	N/A	1.96	N/A	N/A	1.0	N/A	N/A
+Hepatocellular carcinoma	N/A	N/A	N/A	N/A	N/A	-0.947	-1.992	N/A
+Synthesis of purine nucleotide	1.884	-1.049	N/A	N/A	N/A	N/A	N/A	N/A
+Intrathoracic organ tumor	N/A	N/A	-1.534	-0.463	-0.292	0.627	N/A	N/A
+Development of genital tumor	N/A	N/A	0.51	1.181	N/A	1.223	N/A	N/A
+Cell movement of neurons	N/A	N/A	N/A	N/A	0.875	1.892	N/A	-0.128
+Development of colorectal tumor	N/A	N/A	1.96	N/A	N/A	0.927	N/A	N/A
+Colon cancer	N/A	N/A	N/A	-0.025	N/A	1.98	0.849	N/A
+Interaction of DNA	1.368	N/A	N/A	N/A	N/A	1.262	-0.211	N/A
+Neoplasia of leukocytes	N/A	N/A	-0.559	-0.282	0.132	0.507	-1.36	N/A
+Upper gastrointestinal tract tumor	N/A	0.618	2.216	N/A	N/A	N/A	N/A	N/A
+Lymphoma	-1.196	N/A	0.236	0.419	-0.029	-0.041	-0.911	N/A
+Disassembly of filaments	1.471	-1.358	N/A	N/A	N/A	N/A	N/A	N/A
+Formation of dendrites	N/A	N/A	-1.787	N/A	-0.945	N/A	0.095	N/A
+Lung tumor	N/A	N/A	-1.354	-0.418	-0.445	0.598	N/A	N/A
+Female genital neoplasm	N/A	N/A	0.271	N/A	-0.152	2.379	N/A	N/A
+Tumorigenesis of reproductive tract	N/A	N/A	0.271	N/A	-0.152	2.379	N/A	N/A
+Metastasis of cells	N/A	N/A	N/A	N/A	N/A	2.786	N/A	N/A
+Proliferation of embryonic cell lines	N/A	-1.31	N/A	N/A	-1.453	N/A	N/A	N/A
+Cell movement of connective tissue cells	N/A	N/A	N/A	N/A	N/A	N/A	2.755	N/A
+Hydrolysis of nucleotide	1.544	-1.181	N/A	N/A	N/A	N/A	N/A	N/A
+Quantity of cellular protrusions	N/A	N/A	-1.332	N/A	N/A	1.379	N/A	N/A
+Differentiation of stem cells	N/A	N/A	N/A	N/A	N/A	N/A	2.688	N/A
+Formation of cytoskeleton	N/A	-1.418	N/A	0.068	N/A	1.189	N/A	N/A
+Migration of neuroglia	N/A	N/A	N/A	-1.145	N/A	1.518	N/A	N/A
+Proliferation of neuroglia	N/A	N/A	N/A	0.429	N/A	0.718	0.785	0.728
+Hydrolysis of GTP	1.32	-1.327	N/A	N/A	N/A	N/A	N/A	N/A
+Cell death of fibroblast cell lines	N/A	0.393	-1.048	N/A	N/A	1.2	N/A	N/A
+Differentiation of neurons	N/A	N/A	N/A	-0.565	N/A	1.883	-0.185	N/A
+Binding of tumor cell lines	N/A	N/A	N/A	N/A	N/A	2.633	N/A	N/A
+Assembly of intercellular junctions	N/A	N/A	N/A	N/A	N/A	N/A	-2.19	-0.412
+Colony formation of cells	N/A	-0.264	-0.349	N/A	N/A	0.689	-0.783	0.496
+Metabolism of nucleotide	2.572	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Interaction of tumor cell lines	N/A	N/A	N/A	N/A	N/A	2.534	N/A	N/A
+Replication of coronavirus	2.53	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abdominal cancer	-0.082	-0.657	-0.605	-0.046	0.313	-0.3	-0.505	N/A
+Proliferation of central nervous system cells	2.047	N/A	N/A	N/A	N/A	N/A	N/A	-0.456
+Splicing of mRNA	-0.263	0.707	1.374	N/A	0.135	N/A	N/A	N/A
+Advanced malignant solid tumor	0.575	N/A	N/A	-0.726	-0.167	0.018	-0.976	N/A
+Central nervous system solid tumor	N/A	N/A	-0.954	0.444	-0.548	-0.497	N/A	N/A
+Activation of DNA endogenous promoter	-0.902	1.02	N/A	N/A	0.52	N/A	N/A	N/A
+Differentiation of astrocytes	N/A	N/A	N/A	2.433	N/A	N/A	N/A	N/A
+Cell movement of leukocytes	N/A	N/A	N/A	-0.337	N/A	2.089	N/A	N/A
+Congenital anomaly of eye	N/A	N/A	N/A	-2.425	N/A	N/A	N/A	N/A
+Glioma	N/A	N/A	-0.227	0.861	0.103	-1.222	N/A	N/A
+Quantity of reactive oxygen species	-2.406	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cell movement of carcinoma cell lines	0.172	N/A	N/A	N/A	N/A	2.228	N/A	N/A
+Breast carcinoma	N/A	N/A	-1.673	N/A	-0.715	N/A	N/A	N/A
+Long-term potentiation of brain	0.976	N/A	0.369	0.49	N/A	N/A	0.545	N/A
+Angiogenesis	N/A	N/A	N/A	0.152	N/A	1.228	N/A	-0.959
+DNA recombination	N/A	-2.319	N/A	N/A	N/A	N/A	N/A	N/A
+Cell death of neuroblastoma cell lines	-0.441	N/A	-0.158	0.259	N/A	-0.685	-0.764	N/A
+Processing of mRNA	-0.263	0.707	1.171	N/A	0.135	N/A	N/A	N/A
+Congenital encephalopathy	N/A	N/A	0.819	N/A	-0.552	-0.806	0.083	N/A
+Breast or gynecological cancer	N/A	N/A	-1.159	N/A	-1.095	0.0	N/A	N/A
+Extension of axons	N/A	N/A	0.596	N/A	N/A	N/A	1.528	-0.128
+Phagocytosis of tumor cell lines	N/A	-2.248	N/A	N/A	N/A	N/A	N/A	N/A
+Quantity of connective tissue cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-2.233
+Cell movement of fibroblast cell lines	N/A	N/A	N/A	N/A	N/A	2.226	N/A	N/A
+Leukocyte migration	N/A	N/A	N/A	-0.511	N/A	1.707	N/A	N/A
+Infection by Zaire ebolavirus	2.216	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cell death of central nervous system cells	-0.623	N/A	N/A	-0.773	N/A	-0.768	-0.042	N/A
+Development of central nervous system cells	N/A	N/A	N/A	N/A	N/A	2.205	N/A	N/A
+Epithelial neoplasm	N/A	N/A	-0.896	0.465	-0.822	0.016	N/A	N/A
+Genital carcinoma	N/A	N/A	0.97	1.067	N/A	-0.152	N/A	N/A
+Non-astrocytoma brain tumor	-1.98	-0.207	N/A	N/A	N/A	N/A	N/A	N/A
+Cell death of cervical cancer cell lines	-0.239	0.936	0.666	N/A	N/A	N/A	-0.341	N/A
+Chemotaxis of endothelial cells	N/A	N/A	N/A	-0.832	N/A	N/A	N/A	1.342
+Familial central nervous system disease	0.0	N/A	-0.822	N/A	1.342	0.0	N/A	N/A
+Invasion of carcinoma cell lines	N/A	N/A	N/A	N/A	N/A	1.024	1.139	N/A
+Activation of enzyme	N/A	-2.157	N/A	N/A	N/A	N/A	N/A	N/A
+Synaptic transmission	N/A	N/A	0.958	-0.778	N/A	-0.406	N/A	N/A
+Myelination of cells	N/A	2.133	N/A	N/A	N/A	N/A	N/A	N/A
+Depolymerization of filaments	2.118	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Long-term potentiation	0.411	N/A	0.115	-0.595	N/A	0.848	0.148	N/A
+Cell death of muscle cells	0.37	0.673	0.866	0.206	N/A	N/A	N/A	N/A
+Colorectal tumor	N/A	N/A	-0.608	0.163	N/A	0.479	0.861	N/A
+Central nervous system amyloidosis	N/A	N/A	0.721	N/A	N/A	-1.389	N/A	N/A
+Astrocytosis	-1.402	N/A	N/A	N/A	N/A	N/A	0.707	N/A
+B cell cancer	N/A	N/A	0.695	0.0	-1.0	-0.413	N/A	N/A
+Peripheral vascular disease	-0.196	N/A	N/A	1.488	N/A	N/A	0.417	N/A
+Glycolysis	N/A	2.101	N/A	N/A	N/A	N/A	N/A	N/A
+Glycolysis of cells	N/A	2.095	N/A	N/A	N/A	N/A	N/A	N/A
+Colony formation	N/A	0.108	-0.359	N/A	N/A	1.167	-0.448	N/A
+Lymphocytic cancer	N/A	N/A	-0.281	-0.158	-0.029	0.407	-1.198	N/A
+Malignant lymphocytic neoplasm	N/A	N/A	-0.281	-0.158	-0.029	0.407	-1.198	N/A
+Digestive system cancer	N/A	-0.244	0.54	-0.275	-0.188	-0.031	-0.784	N/A
+Homing of cells	N/A	N/A	N/A	-1.611	N/A	N/A	N/A	0.444
+Splicing of RNA	-0.552	0.0	1.007	N/A	-0.484	N/A	N/A	N/A
+Endocytosis by cervical cancer cell lines	2.027	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Quantity of nervous tissue	N/A	N/A	0.222	N/A	-1.191	N/A	0.608	N/A
+Formation of renal lesion	N/A	N/A	-2.02	N/A	N/A	N/A	N/A	N/A
+Formation of filaments	N/A	-0.975	N/A	0.565	N/A	0.48	N/A	N/A
+Cell death of colorectal cancer cell lines	-2.01	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Formation of filopodia	N/A	N/A	N/A	N/A	N/A	2.009	N/A	N/A
+Cell viability of lung cancer cell lines	N/A	-2.006	N/A	N/A	N/A	N/A	N/A	N/A
+Interphase of tumor cell lines	N/A	N/A	N/A	N/A	-1.612	N/A	0.393	N/A
+Chemotaxis	N/A	N/A	N/A	-1.821	N/A	N/A	N/A	0.177
+Synthesis of sphinganine	N/A	1.997	N/A	N/A	N/A	N/A	N/A	N/A
+Ovarian tumor	N/A	N/A	N/A	N/A	N/A	1.982	N/A	N/A
+Oral tumor	N/A	N/A	1.982	N/A	N/A	N/A	N/A	N/A
+Growth of skin	N/A	N/A	N/A	N/A	N/A	N/A	N/A	1.98
+Non-colon gastrointestinal cancer	N/A	N/A	1.969	N/A	N/A	N/A	N/A	N/A
+Upper gastrointestinal tract cancer	N/A	N/A	1.969	N/A	N/A	N/A	N/A	N/A
+Cell death of cerebral cortex cells	-0.674	N/A	N/A	-0.525	N/A	N/A	-0.767	N/A
+Midline brain anomaly	N/A	1.961	N/A	N/A	N/A	N/A	N/A	N/A
+Development of intestinal tumor	N/A	N/A	1.96	N/A	N/A	N/A	N/A	N/A
+Modification of hydrogen peroxide	1.96	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Immune response of tumor cell lines	N/A	-1.957	N/A	N/A	N/A	N/A	N/A	N/A
+Breast or ovarian carcinoma	N/A	N/A	-1.233	N/A	-0.715	N/A	N/A	N/A
+Phagocytosis by macrophage cancer cell lines	N/A	-1.947	N/A	N/A	N/A	N/A	N/A	N/A
+Development of renal tumor	N/A	N/A	-1.947	N/A	N/A	N/A	N/A	N/A
+Kidney carcinoma	N/A	N/A	-1.942	N/A	N/A	N/A	N/A	N/A
+Upper renal tract carcinoma	N/A	N/A	-1.942	N/A	N/A	N/A	N/A	N/A
+Behavioral deficit	N/A	N/A	N/A	N/A	N/A	N/A	N/A	1.941
+Gliosis	-1.935	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Migration of neurons	N/A	N/A	N/A	N/A	0.404	0.971	N/A	-0.555
+Exencephaly	N/A	1.924	N/A	N/A	N/A	N/A	N/A	N/A
+Coordination	0.767	N/A	N/A	N/A	N/A	N/A	N/A	-1.153
+B-cell neoplasm	N/A	N/A	0.449	-0.378	-1.0	-0.091	N/A	N/A
+Gastric lesion	N/A	N/A	1.913	N/A	N/A	N/A	N/A	N/A
+Migration of lymphatic system cells	N/A	N/A	N/A	N/A	N/A	1.905	N/A	N/A
+Cell movement of neuroglia	N/A	N/A	N/A	N/A	N/A	1.901	N/A	N/A
+Lymphocyte migration	N/A	N/A	N/A	N/A	N/A	1.901	N/A	N/A
+Fibrogenesis	N/A	-1.238	N/A	N/A	N/A	0.662	N/A	N/A
+Ataxia	N/A	N/A	1.897	N/A	N/A	N/A	N/A	N/A
+Migration of antigen presenting cells	N/A	N/A	N/A	-1.225	N/A	N/A	N/A	0.657
+Necrosis of epithelial tissue	N/A	1.874	N/A	N/A	N/A	N/A	N/A	N/A
+Infection by Marburg virus	-0.391	1.067	N/A	N/A	-0.391	N/A	N/A	N/A
+Male genital neoplasm	N/A	N/A	0.343	1.348	-0.155	N/A	N/A	N/A
+Assembly of cell-cell contacts	N/A	N/A	N/A	N/A	N/A	N/A	-1.846	N/A
+Formation of intercellular junctions	N/A	N/A	N/A	N/A	N/A	N/A	-1.846	N/A
+Endoplasmic reticulum stress response	-0.279	N/A	N/A	N/A	N/A	-1.565	N/A	N/A
+Prostatic tumor	N/A	N/A	0.036	1.348	-0.456	N/A	N/A	N/A
+Tumor burden	N/A	-1.835	N/A	N/A	N/A	N/A	N/A	N/A
+Cell proliferation of cervical cancer cell lines	1.029	N/A	N/A	N/A	-0.795	N/A	N/A	N/A
+Transactivation of RNA	1.393	N/A	N/A	N/A	0.125	0.293	N/A	N/A
+Autophagy of mitochondria	1.801	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Brain lesion	N/A	N/A	-1.8	N/A	N/A	N/A	N/A	N/A
+Soft tissue lesion	N/A	N/A	-1.795	N/A	N/A	N/A	N/A	N/A
+Formation of actin filaments	N/A	-0.954	N/A	0.257	N/A	0.574	N/A	N/A
+Subcutaneous tumor	N/A	N/A	N/A	N/A	-1.767	N/A	N/A	N/A
+Growth of malignant tumor	N/A	-1.765	N/A	N/A	N/A	N/A	N/A	N/A
+Density of neurons	N/A	N/A	-0.742	N/A	N/A	N/A	0.633	0.377
+Fragmentation of Golgi apparatus	N/A	1.751	N/A	N/A	N/A	N/A	N/A	N/A
+Dysmyelination	N/A	N/A	N/A	N/A	N/A	-1.75	N/A	N/A
+Development of sensory organ	N/A	N/A	N/A	1.717	N/A	N/A	N/A	N/A
+Neural tube defect	N/A	1.716	N/A	N/A	N/A	N/A	N/A	N/A
+Catabolism of hydrogen peroxide	1.715	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Reduction of hydrogen peroxide	1.715	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Invasion of lung cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	1.714	N/A
+Perinatal death	N/A	N/A	1.135	N/A	N/A	N/A	N/A	0.575
+Transport of protein	-0.781	-0.61	-0.318	N/A	N/A	N/A	N/A	N/A
+Proliferation of cancer cells	N/A	-1.696	N/A	N/A	N/A	N/A	N/A	N/A
+Central nervous system cancer	N/A	N/A	-0.974	N/A	N/A	-0.721	N/A	N/A
+Cell death of brain cells	N/A	N/A	N/A	-0.746	N/A	-0.754	-0.188	N/A
+Tumorigenesis of lymphocytes	N/A	N/A	-0.083	-0.082	-0.029	0.348	-1.142	N/A
+Productive infection of cervical cancer cell lines	1.682	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Fragmentation of DNA	-1.681	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hyperactive behavior	N/A	N/A	N/A	N/A	N/A	N/A	N/A	1.671
+Renal cell carcinoma	N/A	N/A	-1.671	N/A	N/A	N/A	N/A	N/A
+Adhesion of neuroglia	N/A	N/A	N/A	-0.497	N/A	1.172	N/A	N/A
+Necrosis of muscle	N/A	0.493	0.745	0.421	N/A	N/A	N/A	N/A
+Ubiquitination	N/A	N/A	-1.658	N/A	N/A	N/A	N/A	N/A
+Production of reactive oxygen species	-1.638	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Organization of cellular membrane	N/A	N/A	1.633	N/A	N/A	N/A	N/A	N/A
+Nonpituitary endocrine tumor	N/A	0.843	0.788	N/A	N/A	N/A	N/A	N/A
+Cell viability of cervical cancer cell lines	1.612	N/A	N/A	N/A	-0.011	N/A	N/A	N/A
+Apoptosis of carcinoma cell lines	-1.622	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Development of connective tissue cells	N/A	N/A	N/A	N/A	N/A	N/A	-0.952	-0.662
+Differentiation of central nervous system cells	N/A	N/A	N/A	1.023	N/A	N/A	0.588	N/A
+Birthweight	N/A	-1.609	N/A	N/A	N/A	N/A	N/A	N/A
+Epilepsy or neurodevelopmental disorder	0.651	N/A	0.563	N/A	0.0	-0.388	N/A	N/A
+Breast adenocarcinoma	N/A	N/A	0.152	N/A	-1.445	N/A	N/A	N/A
+Metastatic solid tumor	0.575	N/A	N/A	N/A	N/A	0.018	-0.976	N/A
+Elongation of neurites	N/A	N/A	N/A	N/A	N/A	0.496	N/A	1.067
+Intestinal tumor	N/A	N/A	-0.431	N/A	-1.131	N/A	N/A	N/A
+Organization of actin cytoskeleton	N/A	N/A	N/A	N/A	N/A	N/A	1.562	N/A
+Initiation of expression of RNA	N/A	-1.554	N/A	N/A	N/A	N/A	N/A	N/A
+Tauopathy	N/A	N/A	-1.551	N/A	N/A	N/A	N/A	N/A
+Pelvic lesion	N/A	N/A	N/A	N/A	-0.857	0.688	N/A	N/A
+Thoracic neoplasm	N/A	N/A	-1.534	N/A	N/A	N/A	N/A	N/A
+Neonatal death	N/A	N/A	1.04	N/A	N/A	N/A	N/A	0.493
+Interphase	N/A	N/A	N/A	N/A	-0.919	N/A	-0.593	N/A
+Abnormality of cerebral cortex	N/A	N/A	1.507	N/A	N/A	N/A	N/A	N/A
+Proliferation of connective tissue cells	0.493	-0.117	N/A	N/A	N/A	0.798	0.088	N/A
+Development of neuroepithelial tumor	N/A	N/A	-0.26	N/A	N/A	-1.222	N/A	N/A
+Depolymerization of actin filaments	N/A	-1.478	N/A	N/A	N/A	N/A	N/A	N/A
+Diabetes mellitus	N/A	N/A	N/A	-1.467	N/A	N/A	N/A	N/A
+Intestinal carcinoma	N/A	N/A	1.467	N/A	N/A	N/A	N/A	N/A
+Cell movement of prostate cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	1.46	N/A
+Epithelial-mesenchymal transition	N/A	N/A	N/A	N/A	N/A	N/A	1.458	N/A
+Differentiation of connective tissue cells	N/A	N/A	N/A	N/A	1.454	N/A	N/A	N/A
+Cell death of hippocampal neurons	N/A	N/A	N/A	N/A	N/A	N/A	-1.447	N/A
+Cell death of carcinoma cell lines	-1.439	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Stereotypy	1.432	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Migration of prostate cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	1.414	N/A
+Stomach tumor	N/A	N/A	1.408	N/A	N/A	N/A	N/A	N/A
+Motor function	0.558	N/A	N/A	N/A	N/A	-0.529	-0.308	N/A
+Degenerative brain disorder	N/A	N/A	N/A	1.016	N/A	N/A	-0.374	N/A
+Transport of vesicles	N/A	N/A	1.388	N/A	N/A	N/A	N/A	N/A
+Ovarian lesion	N/A	N/A	N/A	N/A	N/A	1.387	N/A	N/A
+Progressive solid tumor	N/A	-1.387	N/A	N/A	N/A	N/A	N/A	N/A
+Brain tumor	N/A	N/A	-1.369	N/A	N/A	N/A	N/A	N/A
+Cell death of retinal ganglion cells	N/A	N/A	N/A	-0.579	N/A	0.785	N/A	N/A
+Lymphohematopoietic cancer	N/A	N/A	-1.363	N/A	N/A	N/A	N/A	N/A
+Synaptic depression	N/A	N/A	N/A	N/A	N/A	1.361	N/A	N/A
+Formation of cellular inclusion bodies	N/A	N/A	N/A	N/A	N/A	N/A	-1.352	N/A
+Epithelial-mesenchymal transition of tumor cell lines	1.345	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hematologic cancer of cells	N/A	N/A	-0.086	0.161	-0.029	0.157	-0.911	N/A
+Cell movement of antigen presenting cells	N/A	N/A	N/A	-1.342	N/A	N/A	N/A	N/A
+Quantity of C18-ceramide	N/A	1.342	N/A	N/A	N/A	N/A	N/A	N/A
+Quantity of ribosome	N/A	-1.342	N/A	N/A	N/A	N/A	N/A	N/A
+Activation of blood cells	N/A	N/A	N/A	1.337	N/A	N/A	N/A	N/A
+Hepato-pancreato-biliary cancer	N/A	N/A	-0.12	-0.369	0.345	-0.498	N/A	N/A
+Infection by coronavirus	N/A	N/A	N/A	N/A	0.152	N/A	-1.172	N/A
+Metastasis of hepatoma cell lines	N/A	-1.311	N/A	N/A	N/A	N/A	N/A	N/A
+Connective or soft tissue tumor	N/A	N/A	N/A	0.426	-0.319	N/A	-0.555	N/A
+Depolarization of cellular membrane	N/A	N/A	N/A	-1.3	N/A	N/A	N/A	N/A
+Development of benign tumor	N/A	0.612	N/A	N/A	N/A	N/A	0.664	N/A
+Cell death of epithelial cells	N/A	1.264	N/A	N/A	N/A	N/A	N/A	N/A
+Colon tumor	N/A	N/A	0.054	0.163	N/A	0.479	0.562	N/A
+Growth of embryo	N/A	N/A	N/A	N/A	N/A	1.258	N/A	N/A
+Paralysis	N/A	N/A	N/A	1.254	N/A	N/A	N/A	N/A
+Differentiation of tumor cell lines	N/A	N/A	N/A	N/A	N/A	1.243	N/A	N/A
+Quantity of steroid	N/A	N/A	N/A	1.236	N/A	N/A	N/A	N/A
+Cell movement of phagocytes	N/A	N/A	N/A	-1.233	N/A	N/A	N/A	N/A
+Formation of cell-cell contacts	N/A	N/A	N/A	N/A	N/A	N/A	-1.231	N/A
+Apoptosis of retinal ganglion cells	N/A	N/A	N/A	-0.647	N/A	0.579	N/A	N/A
+Differentiation of brain	N/A	N/A	N/A	-1.219	N/A	N/A	N/A	N/A
+Development of carcinoma cell lines	N/A	1.212	N/A	N/A	N/A	N/A	N/A	N/A
+Congenital anomaly of cardiovascular system	N/A	0.423	N/A	-0.785	N/A	N/A	N/A	N/A
+Proliferation of epithelial cells	N/A	N/A	N/A	0.004	N/A	N/A	1.193	N/A
+Cerebrovascular dysfunction	N/A	N/A	N/A	1.188	N/A	N/A	N/A	N/A
+Migration of tumor cells	N/A	N/A	N/A	N/A	N/A	N/A	1.184	N/A
+Endocrine gland tumor	N/A	1.055	0.124	N/A	0.0	N/A	N/A	N/A
+Interphase of colorectal cancer cell lines	N/A	1.177	N/A	N/A	N/A	N/A	N/A	N/A
+Action potential of cells	N/A	N/A	N/A	N/A	N/A	-1.172	N/A	N/A
+Non-traumatic arthropathy	N/A	N/A	N/A	N/A	1.165	N/A	N/A	N/A
+Neuromuscular disease	N/A	N/A	1.165	N/A	N/A	N/A	N/A	N/A
+Growth of epithelial tissue	N/A	N/A	N/A	0.162	N/A	N/A	1.002	N/A
+Differentiation of neural precursor cells	N/A	N/A	N/A	-0.6	N/A	N/A	-0.555	N/A
+Oxidation of protein	-1.154	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hearing	1.0	N/A	N/A	N/A	N/A	N/A	N/A	0.152
+Pancreaticobiliary carcinoma	N/A	N/A	-0.445	N/A	0.686	N/A	N/A	N/A
+Progressive encephalopathy	N/A	0.094	-0.425	-0.611	N/A	N/A	N/A	N/A
+Lymphatic system tumor	N/A	N/A	-0.738	N/A	-0.287	-0.089	N/A	N/A
+Cell movement of ovarian cancer cell lines	1.11	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cell movement of myeloid cells	N/A	N/A	N/A	-1.11	N/A	N/A	N/A	N/A
+Long-term potentiation of cerebral cortex	N/A	N/A	0.39	0.72	N/A	N/A	N/A	N/A
+Quantity of hair cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	1.109
+Large intestine neoplasm	N/A	-0.022	-0.608	N/A	N/A	0.479	N/A	N/A
+Development of vasculature	N/A	N/A	N/A	0.134	N/A	N/A	N/A	-0.959
+Conformational modification of protein	N/A	N/A	-1.093	N/A	N/A	N/A	N/A	N/A
+Cell death of connective tissue cells	N/A	0.614	N/A	N/A	N/A	0.478	N/A	N/A
+Intestinal adenocarcinoma	N/A	N/A	1.091	N/A	N/A	N/A	N/A	N/A
+Gastrointestinal adenocarcinoma	N/A	N/A	1.091	N/A	N/A	N/A	N/A	N/A
+Biosynthesis of nucleoside triphosphate	N/A	N/A	N/A	N/A	N/A	1.069	N/A	N/A
+Prostatic carcinoma	N/A	N/A	N/A	1.067	N/A	N/A	N/A	N/A
+Bleeding	N/A	N/A	N/A	N/A	N/A	N/A	N/A	1.063
+Cell death of kidney cells	-0.756	N/A	N/A	N/A	N/A	N/A	-0.29	N/A
+Memory	N/A	N/A	N/A	N/A	-1.038	N/A	N/A	N/A
+Intrathoracic malignant tumor	N/A	N/A	-1.035	N/A	N/A	N/A	N/A	N/A
+Cell death of embryonic cell lines	N/A	0.919	-0.115	N/A	N/A	N/A	N/A	N/A
+Quantity of intercellular junctions	N/A	N/A	N/A	-1.033	N/A	N/A	N/A	N/A
+Colony formation of carcinoma cell lines	N/A	1.03	N/A	N/A	N/A	N/A	N/A	N/A
+Uptake of D-glucose	N/A	N/A	N/A	1.025	N/A	N/A	N/A	N/A
+Potentiation of synapse	N/A	N/A	N/A	N/A	N/A	1.02	N/A	N/A
+Distribution of lipid	N/A	N/A	N/A	-1.016	N/A	N/A	N/A	N/A
+Epithelial-mesenchymal transition of prostate cancer cell lines	-1.009	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cell proliferation of fibroblasts	N/A	-0.588	N/A	N/A	N/A	0.414	N/A	N/A
+Assembly of protein-protein complex	N/A	N/A	-1.0	N/A	N/A	N/A	N/A	N/A
+Apoptosis of cancer stem cells	N/A	1.0	N/A	N/A	N/A	N/A	N/A	N/A
+Cell viability of breast cancer cell lines	0.996	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+T-cell malignant neoplasm	N/A	N/A	-0.166	-0.822	N/A	N/A	N/A	N/A
+Formation of eye	N/A	N/A	N/A	0.977	N/A	N/A	N/A	N/A
+Cytokinesis	N/A	-0.976	N/A	N/A	N/A	N/A	N/A	N/A
+Binding of carbohydrate	N/A	N/A	N/A	-0.964	N/A	N/A	N/A	N/A
+Colony formation of myeloid cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	0.94
+Migration of phagocytes	N/A	N/A	N/A	N/A	N/A	N/A	N/A	0.934
+Non-small cell lung carcinoma	N/A	N/A	-0.834	N/A	-0.095	0.0	N/A	N/A
+Differentiation of brain cells	N/A	N/A	N/A	-0.928	N/A	N/A	N/A	N/A
+Metastatic potential of tumor cell lines	0.922	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Apoptosis of neuroblastoma cell lines	N/A	N/A	N/A	N/A	N/A	N/A	-0.916	N/A
+Apoptosis of muscle cells	0.307	0.608	N/A	N/A	N/A	N/A	N/A	N/A
+Transformation of fibroblasts	N/A	N/A	N/A	N/A	N/A	N/A	0.914	N/A
+Proliferation of gonadal cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	0.9
+Glioblastoma	N/A	-0.148	-0.748	N/A	N/A	N/A	N/A	N/A
+Reorganization of filaments	N/A	-0.895	N/A	N/A	N/A	N/A	N/A	N/A
+Exchange of nucleotide	0.447	-0.447	N/A	N/A	N/A	N/A	N/A	N/A
+Biosynthesis of reactive oxygen species	-0.102	0.786	N/A	N/A	N/A	N/A	N/A	N/A
+Cell movement of tumor cells	N/A	N/A	N/A	N/A	N/A	N/A	0.868	N/A
+Cell movement of colorectal cancer cell lines	N/A	N/A	N/A	0.639	N/A	-0.226	N/A	N/A
+Migration of ovarian cancer cell lines	0.862	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Glycolysis of tumor cell lines	0.856	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Leukopoiesis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-0.855
+Metastatic potential	0.852	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Ductal carcinoma	N/A	N/A	-0.4	N/A	0.444	N/A	N/A	N/A
+Stress response of cells	-0.841	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+M phase	N/A	-0.839	N/A	N/A	N/A	N/A	N/A	N/A
+Quantity of C24:1-ceramide	N/A	0.816	N/A	N/A	N/A	N/A	N/A	N/A
+Lymphatic node tumor	N/A	N/A	N/A	N/A	N/A	-0.816	N/A	N/A
+Survival of neural cells	N/A	N/A	N/A	0.093	N/A	0.708	N/A	N/A
+Gliosis of central nervous system	-0.8	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Synthesis of nitric oxide	N/A	N/A	N/A	-0.784	N/A	N/A	N/A	N/A
+Astrocytoma	N/A	N/A	-0.781	N/A	N/A	N/A	N/A	N/A
+Quantity of actin stress fibers	0.78	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Glycosylation of protein	-0.772	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Embryonal tumor of brain	N/A	-0.759	N/A	N/A	N/A	N/A	N/A	N/A
+Density of synapse	N/A	N/A	N/A	N/A	N/A	N/A	0.479	0.275
+Glioma cancer	N/A	N/A	-0.748	N/A	N/A	N/A	N/A	N/A
+High grade astrocytoma	N/A	N/A	-0.748	N/A	N/A	N/A	N/A	N/A
+High grade glioma	N/A	N/A	-0.748	N/A	N/A	N/A	N/A	N/A
+Blastoma	N/A	N/A	-0.748	N/A	N/A	N/A	N/A	N/A
+Maturation of nervous tissue	N/A	N/A	N/A	N/A	N/A	0.742	N/A	N/A
+Amplification of centrosome	N/A	-0.73	N/A	N/A	N/A	N/A	N/A	N/A
+Growth of smooth muscle	N/A	N/A	N/A	-0.724	N/A	N/A	N/A	N/A
+Transmembrane potential of mitochondria	0.718	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Apoptosis of pheochromocytoma cell lines	N/A	N/A	N/A	N/A	N/A	N/A	0.71	N/A
+Quantity of vesicles	N/A	N/A	N/A	N/A	N/A	N/A	0.707	N/A
+Cell death of pheochromocytoma cell lines	N/A	N/A	N/A	N/A	N/A	N/A	0.705	N/A
+Cell death of pancreatic cancer cell lines	-0.691	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Necrosis of prostate cancer cell lines	-0.687	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Interphase of breast cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	0.686	N/A
+Lymphoid cancer	N/A	N/A	-0.648	N/A	N/A	-0.037	N/A	N/A
+DNA damage	-0.68	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Lung carcinoma	N/A	N/A	N/A	N/A	-0.365	-0.308	N/A	N/A
+Hematopoiesis of mononuclear leukocytes	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-0.664
+Development of tumor cell lines	N/A	0.037	N/A	N/A	N/A	0.066	-0.56	N/A
+Proliferation of oligodendrocytes	N/A	N/A	N/A	N/A	N/A	N/A	0.663	N/A
+B-cell non-Hodgkin lymphoma	N/A	N/A	0.44	N/A	N/A	-0.218	N/A	N/A
+Long-term potentiation of hippocampus	N/A	N/A	0.658	N/A	N/A	N/A	N/A	N/A
+Degeneration of epithelial tissue	N/A	N/A	N/A	N/A	N/A	N/A	N/A	0.655
+Neoplasia of lymphoid organ	N/A	N/A	N/A	N/A	N/A	-0.652	N/A	N/A
+Head and neck squamous cell carcinoma	N/A	N/A	0.651	N/A	N/A	N/A	N/A	N/A
+Gliosis of cerebral cortex	-0.651	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Degeneration of neuroglia	N/A	N/A	N/A	-0.651	N/A	N/A	N/A	N/A
+Apoptosis of brain cells	N/A	N/A	N/A	N/A	N/A	N/A	-0.636	N/A
+Apoptosis of central nervous system cells	N/A	N/A	N/A	N/A	N/A	N/A	-0.636	N/A
+Metabolism of DNA	-0.5	-0.131	N/A	N/A	N/A	N/A	N/A	N/A
+Apoptosis of prostate cancer cell lines	-0.624	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cell death of breast cancer cell lines	N/A	0.614	N/A	N/A	N/A	N/A	N/A	N/A
+Maturation of cells	N/A	N/A	N/A	-0.609	N/A	N/A	N/A	N/A
+Colony formation of blood cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	0.592
+Quantity of connective tissue	N/A	N/A	N/A	N/A	N/A	N/A	N/A	0.58
+Proliferation of smooth muscle cells	N/A	N/A	N/A	-0.563	N/A	N/A	N/A	N/A
+Exocytosis of granules	N/A	-0.555	N/A	N/A	N/A	N/A	N/A	N/A
+Elongation of mitochondria	0.555	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Apoptosis of cervical cancer cell lines	N/A	0.552	N/A	N/A	N/A	N/A	N/A	N/A
+Mature B-cell neoplasm	N/A	N/A	-0.391	N/A	N/A	-0.152	N/A	N/A
+Mature lymphocytic neoplasm	N/A	N/A	-0.391	N/A	N/A	-0.152	N/A	N/A
+Mature B cell malignant tumor	N/A	N/A	-0.391	N/A	N/A	-0.152	N/A	N/A
+Cancer of head	N/A	N/A	0.427	N/A	N/A	0.115	N/A	N/A
+Vascular tumor	N/A	0.537	N/A	N/A	N/A	N/A	N/A	N/A
+Cardiovascular neoplasm	N/A	0.537	N/A	N/A	N/A	N/A	N/A	N/A
+Angioma	N/A	0.537	N/A	N/A	N/A	N/A	N/A	N/A
+Hemangioma	N/A	0.537	N/A	N/A	N/A	N/A	N/A	N/A
+Synthesis of amine	N/A	0.516	N/A	N/A	N/A	N/A	N/A	N/A
+Disassembly of actin filaments	N/A	-0.499	N/A	N/A	N/A	N/A	N/A	N/A
+Migration of endothelial cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-0.498
+Movement of vascular endothelial cells	N/A	N/A	N/A	-0.485	N/A	N/A	N/A	N/A
+Head and neck carcinoma	N/A	N/A	0.479	N/A	N/A	N/A	N/A	N/A
+Transactivation	N/A	N/A	N/A	N/A	-0.128	0.338	N/A	N/A
+Survival of organism	N/A	N/A	N/A	N/A	N/A	N/A	-0.46	N/A
+Cleavage of cells	N/A	-0.458	N/A	N/A	N/A	N/A	N/A	N/A
+Apoptosis of fibroblast cell lines	N/A	0.453	N/A	N/A	N/A	N/A	N/A	N/A
+Quantity of synaptic vesicles	N/A	N/A	N/A	N/A	N/A	N/A	0.447	N/A
+Coordination of limb	0.447	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Development of astrocytes	N/A	N/A	N/A	N/A	N/A	0.443	N/A	N/A
+Colony formation of tumor cell lines	N/A	0.135	N/A	N/A	N/A	-0.306	N/A	N/A
+Formation of dendritic spines	N/A	N/A	-0.439	N/A	N/A	N/A	N/A	N/A
+Lymphocytic neoplasm	N/A	N/A	-0.409	N/A	-0.029	N/A	N/A	N/A
+Development of lung tumor	N/A	N/A	N/A	N/A	-0.437	N/A	N/A	N/A
+Cell death of epithelial cell lines	N/A	0.433	N/A	N/A	N/A	N/A	N/A	N/A
+Cell proliferation of melanoma cell lines	N/A	-0.43	N/A	N/A	N/A	N/A	N/A	N/A
+Adrenal gland tumor	N/A	N/A	0.424	N/A	N/A	N/A	N/A	N/A
+Apoptosis of brain	N/A	N/A	N/A	N/A	N/A	N/A	-0.417	N/A
+Pulmonary fibrosis or aplastic anemia	0.094	N/A	N/A	0.314	N/A	N/A	N/A	N/A
+Intestinal cancer	N/A	N/A	-0.066	0.328	N/A	N/A	N/A	N/A
+Uptake of monosaccharide	N/A	N/A	N/A	0.394	N/A	N/A	N/A	N/A
+Cell viability of kidney cell lines	-0.389	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cerebellar lesion	N/A	-0.389	N/A	N/A	N/A	N/A	N/A	N/A
+G2 phase	N/A	0.378	N/A	N/A	N/A	N/A	N/A	N/A
+Cell movement of melanoma cells	N/A	N/A	N/A	0.378	N/A	N/A	N/A	N/A
+Formation of spindle apparatus	-0.378	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Formation of mitotic spindle	-0.378	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Shape change of axons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	0.371
+Leukoencephalopathy	N/A	N/A	0.371	N/A	N/A	N/A	N/A	N/A
+Congenital heart disease	N/A	0.355	N/A	N/A	N/A	N/A	N/A	N/A
+Quantity of brain cells	N/A	N/A	N/A	N/A	N/A	N/A	0.346	N/A
+Bile duct carcinoma	N/A	N/A	-0.343	N/A	N/A	N/A	N/A	N/A
+Biliary tract cancer	N/A	N/A	-0.343	N/A	N/A	N/A	N/A	N/A
+Bile duct cancer	N/A	N/A	-0.343	N/A	N/A	N/A	N/A	N/A
+Biliary tract carcinoma	N/A	N/A	-0.343	N/A	N/A	N/A	N/A	N/A
+Cell viability of neurons	N/A	N/A	N/A	0.342	N/A	N/A	N/A	N/A
+Localization of protein	N/A	N/A	N/A	N/A	-0.314	N/A	N/A	N/A
+Vaso-occlusion	N/A	N/A	N/A	0.306	N/A	N/A	N/A	N/A
+Apoptosis of tumor cells	N/A	0.303	N/A	N/A	N/A	N/A	N/A	N/A
+Cell death of cortical neurons	-0.293	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Proliferation of brain cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	0.293
+Incorporation of amino acids	0.277	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Lymphoproliferative disorder	N/A	N/A	-0.276	N/A	N/A	N/A	N/A	N/A
+Redistribution of lipid	N/A	N/A	N/A	-0.254	N/A	N/A	N/A	N/A
+Migration of smooth muscle cells	N/A	0.25	N/A	N/A	N/A	N/A	N/A	N/A
+Haptotaxis of cells	0.247	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Epilepsy	N/A	N/A	N/A	N/A	0.0	-0.239	N/A	N/A
+Quantity of central nervous system cells	N/A	N/A	N/A	N/A	N/A	N/A	-0.237	N/A
+Activation of microglia	N/A	N/A	N/A	0.232	N/A	N/A	N/A	N/A
+Death of embryo	-0.221	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+T-cell non-Hodgkin lymphoma	N/A	N/A	N/A	N/A	N/A	-0.218	N/A	N/A
+Cell viability of myeloma cell lines	N/A	-0.21	N/A	N/A	N/A	N/A	N/A	N/A
+Proliferation of prostate cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-0.187
+Familial encephalopathy	N/A	N/A	-0.186	N/A	N/A	N/A	N/A	N/A
+Cell viability of gastrointestinal stromal tumor cell lines	N/A	-0.184	N/A	N/A	N/A	N/A	N/A	N/A
+Transformation of embryonic cell lines	N/A	-0.181	N/A	N/A	N/A	N/A	N/A	N/A
+Progressive neuropathy	N/A	0.094	0.084	N/A	N/A	N/A	N/A	N/A
+Formation of nuclear envelope	N/A	-0.152	N/A	N/A	N/A	N/A	N/A	N/A
+Mature B-cell lymphoma	N/A	N/A	0.0	N/A	N/A	-0.152	N/A	N/A
+Endocrine cancer	N/A	N/A	0.152	N/A	N/A	N/A	N/A	N/A
+Binding of progesterone	0.152	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Initiation of translation of protein	N/A	0.152	N/A	N/A	N/A	N/A	N/A	N/A
+Epileptic seizure	N/A	N/A	N/A	N/A	N/A	0.152	N/A	N/A
+Nodule	N/A	0.152	N/A	N/A	N/A	N/A	N/A	N/A
+Invasive cancer	N/A	N/A	N/A	N/A	-0.152	N/A	N/A	N/A
+Endocrine carcinoma	N/A	N/A	0.152	N/A	N/A	N/A	N/A	N/A
+Sprouting angiogenesis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-0.152
+Cell movement of endothelial cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-0.145
+Cell proliferation of sarcoma cell lines	N/A	-0.141	N/A	N/A	N/A	N/A	N/A	N/A
+Cell movement of muscle cells	N/A	0.135	N/A	N/A	N/A	N/A	N/A	N/A
+Branching of vasculature	N/A	N/A	N/A	N/A	N/A	N/A	0.135	N/A
+Neoplasia of epithelial cells	N/A	N/A	N/A	N/A	0.13	N/A	N/A	N/A
+Interaction of neuroglia	N/A	N/A	N/A	-0.13	N/A	N/A	N/A	N/A
+Auditory evoked potential	N/A	N/A	N/A	N/A	N/A	N/A	N/A	0.128
+Colony formation of hematopoietic cell lines	N/A	0.128	N/A	N/A	N/A	N/A	N/A	N/A
+Binding of neuroglia	N/A	N/A	N/A	0.127	N/A	N/A	N/A	N/A
+Generation of reactive oxygen species	0.122	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Sensation	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-0.114
+Invasion of adenocarcinoma cell lines	N/A	N/A	N/A	N/A	N/A	N/A	-0.114	N/A
+Cell movement of vascular smooth muscle cells	N/A	-0.107	N/A	N/A	N/A	N/A	N/A	N/A
+Progressive motor neuropathy	N/A	N/A	0.094	N/A	N/A	N/A	N/A	N/A
+Progressive motor neuron disease	N/A	N/A	0.094	N/A	N/A	N/A	N/A	N/A
+Growth of head	N/A	N/A	N/A	N/A	N/A	N/A	N/A	0.086
+Uterine tumor	N/A	N/A	0.083	N/A	N/A	N/A	N/A	N/A
+Cell viability of central nervous system cells	N/A	N/A	N/A	-0.068	N/A	N/A	N/A	N/A
+Development of gap junctions	N/A	N/A	N/A	N/A	N/A	N/A	N/A	-0.063
+Proliferation of epithelial cell lines	N/A	-0.057	N/A	N/A	N/A	N/A	N/A	N/A
+Cell movement of smooth muscle cells	N/A	-0.033	N/A	N/A	N/A	N/A	N/A	N/A
+Colon carcinoma	N/A	N/A	N/A	-0.025	N/A	N/A	N/A	N/A
+Colorectal carcinoma	N/A	N/A	N/A	-0.025	N/A	N/A	N/A	N/A
+Large intestine carcinoma	N/A	N/A	N/A	-0.025	N/A	N/A	N/A	N/A
+Concentration of lipid	N/A	N/A	N/A	-0.017	N/A	N/A	N/A	N/A
+Atherosclerosis	N/A	N/A	N/A	-0.005	N/A	N/A	N/A	N/A
+Migration of colorectal cancer cell lines	N/A	N/A	N/A	N/A	N/A	0.002	N/A	N/A
+Accumulation of selenium	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Smooth muscle tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cell cycle progression of prostatic adenocarcinoma cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of body cavity	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cell-cell adhesion of neurons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Metabolism of ATP	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Outgrowth of dendrites	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Head and neck oncocytoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Length of neurons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of synaptic spine	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Oligodendroglioma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Diabetic foot ulcer disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Arrest in G1 phase of lung cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Inflammation of spinal cord	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+HNSHA due to aldolase a deficiency	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hypoplasia of islets of Langerhans	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Familial pervasive developmental disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Advanced stage acanthosis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Fragmentation of actin filaments	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Small intestine cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Mitotic exit DNA damage checkpoint	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Failure of bone marrow	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Grade 3 glioma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Early-onset progressive encephalopathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Generalized epilepsy with febrile seizures plus type 7	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Maculopathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Chronic cough	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Transmigration of macrophages	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Breakdown of dopamine	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hypertrophy of intestinal villus	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Renal clear cell adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Familial Parkinson disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hereditary Eye Disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Colony formation of erythroid cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Catabolism of glycoprotein	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of ear	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Ductal breast carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Mitochondrial disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Corpus uteri carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hyperplasia of heart	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Lyme arthritis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Mitochondrial myopathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Stage I metastatic non-small cell lung carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Metabolism of mRNA	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Esophageal cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Leiomyoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hereditary neuropathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Acute pancreatitis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Aplastic anemia or thalassemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Quantity of intermediate filaments	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Diabetic complication	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Extrapulmonary squamous cell carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of neurons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Early stage solid tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hereditary malformation of cortical development	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Chronic skin disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Large intestine adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Diamond-Blackfan anemia type 11	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hereditary polyneuropathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cellulite of the buttocks	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of rhombencephalon	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormality of endometrium	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Refractory malignant tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Gastro-esophageal carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Autosomal recessive neurological disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Endometrioid endometrial adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Encephalomyopathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Stage I-II tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of nervous system	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Muscle tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Bleeding of smooth muscle	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+X-linked hereditary disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Mixed phenotype acute leukemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Distribution of cholesterol	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Pharmacologically induced seizure	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Refractory hematologic cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Ecchymosis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Schizophrenia spectrum disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of dendrites	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Removal of reactive oxygen species	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Poorly differentiated endocrine carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Autism spectrum disorder or intellectual disability	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Acetylation of Histone h2a	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Proliferation of sensory neurons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Female genital tract serous carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Enuresis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Arrest in G1 phase	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Pancreatic tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Gastroesophageal cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Focal cortical dysplasia of Taylor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Disorganization of inner nuclear layer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hyperpolarization of embryonic cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Primary papillary thyroid carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Progression of mammary tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Familial colorectal cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of cochlea	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Major affective disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Size of head	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Tuberous sclerosis complex	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cell cycle progression of endocrine cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Adenoid cystic carcinoma of salivary gland	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Enlargement of early endosomes	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Familial mental retardation	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Endoplasmic reticulum stress response of cervical cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Folding maturation of protein	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Clear cell neoplasm	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Development of primitive neuroectodermal tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Degeneration of stromal cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Oral cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Renal colic	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Active stage osteoarthritis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Colony formation of cervical cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Extraintestinal functional disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+X-linked mental retardation	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Axonal Charcot-Marie-Tooth disease type 2V	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Oral lesion	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Active stage primary gout	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Complex V deficiency	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Invasive lung cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Congenital atransferrinemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Familial brain tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Oral squamous cell carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Testicular germ cell tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hereditary sensory neuropathy type IID	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Malignant mixed Mullerian tumor in endometrium	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Familial febrile seizures 3b	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of nervous system	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Salivary gland carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Duodenal adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Chemotaxis of endothelial progenitor cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Syndromic encephalopathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Diamond-Blackfan anemia type 17	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Binding of hepatocytes	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Metastatic neuroendocrine tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Alignment of actin filaments	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Age-related macular degeneration type 5	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of central nervous system	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Frontotemporal degeneration spectrum disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal respiration	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of vertebral column	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Urothelial bladder carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Acute shoulder pain	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Large-cell carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Migration of embryonic cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Refractory acute leukemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Dupuytren contracture	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Clustering of late spermatids	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Adhesion of germ cell tumor cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Leber optic atrophy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Bosch-Boonstra-Schaaf optic atrophy syndrome	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hereditary optic atrophy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Duodenal cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Binding of neuroblastoma cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Capillary hemangioma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Adrenal cortex tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Charcot-Marie-Tooth disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Loss of chromosomes	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Ovarian adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Detachment of thyroid tumor cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Size of embryo	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Activation of dexamethasone	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Diffuse B-cell lymphoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Processing of rRNA	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Length of neurites	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Bladder cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of telencephalon	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Thickness of cerebral cortex	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Colon adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Binding of ATF binding site	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cecum adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Gonadal tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Valvulopathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hypotonia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Growth arrest	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Progressive central nervous system tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Entry into S phase of melanoma cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Function of lysosome	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Length of actin stress fibers	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Inflammation of breast	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Global developmental delay	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Myelodysplastic syndrome	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Lissencephaly	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Autosomal dominant spastic paraplegia 10 with peripheral neuropathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Size of dendritic trees	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cervical incompetence	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Palate squamous cell carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Benign uterine disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of embryo	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hereditary elliptocytosis due to deficiency of protein 4.1	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Adrenal cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Celiac disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Brain glioma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Alternative splicing of mRNA	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of Purkinje cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cell survival of cancer-associated fibroblasts	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Folding of glycoprotein	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Exercise intolerance, cardiomyopathy and septo-optic dysplasia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Adult-onset ataxia and polyneuropathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Testicular tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of lesion	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Lichen planus	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Growth of Bacteroides fragilis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of heart ventricle	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Age-related macular degeneration type 7	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Stage I epithelial cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+46, XY sex reversal type 9	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Endometriosis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Allergy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Accumulation of choline	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Lateral epicondylitis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Stabilization of protein	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of organ of Corti	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Modification of rRNA	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Plasma cell neoplasm	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Development of endocrine gland tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Grade 3-4 glioma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+T-lymphoblastic leukemia/lymphoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Low back pain	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of central nervous system cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Conjugation of thymocytes	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Quantity of granule cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Dissemination of Staphylococcus aureus	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Adult leukemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of bone	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Mitochondrial respiratory chain deficiency	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Diameter of left common carotid artery	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Length of dendritic spines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Progression of glioma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Benign connective or soft tissue neoplasm	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Primary oral squamous cell carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of brain	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of hippocampus	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Organization of synapse	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Arrest in interphase of tumor cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Degradation of epinephrine	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hyperpolarization of kidney cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Axonal Charcot-Marie-Tooth disease type 2W	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Stage I-II cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Diamond-blackfan anemia type 7	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Malignant neoplasm of aerodigestive tract	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Chromophobe renal cell carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Development of metencephalon	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Amyotrophic lateral sclerosis type 20	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of telencephalon	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Colony formation of connective tissue cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Chronic respiratory disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Proliferation of oligodendrocyte precursor cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Delay in collapse of mammary alveolus	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Redistribution of cholesterol	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Thyroid oncocytic carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Thyroid cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Familial british dementia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Organization of neurons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Peripheral T-cell lymphoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Thyroid adenoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Thyroid carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Histiocytic neoplasm	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Female genital carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Lebers optic atrophy with dystonia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Targeting of protein	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Neck neoplasm	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphogenesis of mammary duct	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Autosomal dominant mental retardation type 32	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Mature T-cell or NK-cell neoplasm	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Autosomal recessive mucopolysaccharidosis type IIIB	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Allergic pulmonary eosinophilia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Disorganization of inner plexiform layer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Formation of uterine carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of forebrain	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of cardiac muscle	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Maturation of synapse	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Diameter of right common carotid artery	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Neurodevelopmental disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Upper gastrointestinal carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Autosomal dominant amyloidosis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Fusion of small unilamellar vesicles	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Serous adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Advanced lung carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Relapsed acute leukemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Leigh syndrome	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cerebral malformation	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Neuroblastic tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Thyroid follicular adenoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of pons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Colorectal adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Fibrosis of cornea	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphogenesis of cranial nerve	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Formation of cardinal vein	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Processing of protein fragment	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cockayne syndrome type II	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Length of cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Schizophrenia or schizoaffective disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Development of distal convoluted tubule	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Small intestine tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Quantity of cochlea cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Parkinsonism	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Assembly of Respiratory chain complex I	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Exocytosis of secretory granules	N/A	0.0	N/A	N/A	N/A	N/A	N/A	N/A
+DNA damage checkpoint	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Prostatic adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of ventricular wall	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Stage I cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Colony formation of erythroid precursor cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Grade 3-4 tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Serous ovarian adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Primary head and neck cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Congenital generalized lipodystrophy type 2	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Endometrioid carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Gastric cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Stage I-IIIA non-small cell lung cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of liver	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Tetralogy of Fallot	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Chronic psoriasis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Tonsillar squamous cell carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Advanced non-small cell lung carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Intellectual disability with ophthalmic disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Initiation of translation of mRNA	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hereditary myopathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Postoperative dental pain	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+G1 phase of carcinoma cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Arrest in interphase of bone cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Turnover of actin filaments	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Inhibition of carbohydrate	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Transient infantile mitochondrial myopathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Salivary gland cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Syndromic developmental delay	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hypertrophic scarring	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Benign neoplasm of endocrine gland	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Modification of ovarian cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Foliation of cerebellum	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Very low birth weight	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Familial syndromic intellectual disability	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Half-life of leukotriene A4	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+MYCN amplification positive neuroblastoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Primary head and neck squamous cell carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Maturation of neurons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hyperplastic thyroid nodule	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Delay in interphase of connective tissue cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Metastatic small cell carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Disulfide bonding of protein	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Adult acute leukemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Plaque psoriasis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+COVID-19	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Dominant mental retardation	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Advanced stage carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of Purkinje's layer of cerebellum	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Familial frontotemporal dementia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Contraction of skin cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Syndromic mental retardation	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Arrest in interphase	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Stabilization of synapse	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Adult acute myeloid leukemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of cerebellum	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Syndromic neurodevelopmental disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Papillary carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Refractory acute myeloid leukemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of bent tail	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Development of angioma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Sinus pressure	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Heterotopic ossification	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Early stage diabetic nephropathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Spreading depression of cerebral cortex	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Mild to moderate stage acute pain	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cytochrome c oxidase deficiency	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+G1/S phase transition of lung cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Active stage tendonitis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Clear-cell adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of neuroglia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Malignant neoplasm of connective or soft tissue of abdomen	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Removal of carbohydrate	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Endometrium tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Metabolic syndrome X	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of cellular protrusions	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Endometrial cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Neuromuscular disease with neuropathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Juvenile rheumatoid arthritis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Endometrial carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Autism or intellectual disability	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Mitochondrial DNA-related disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Intermediate disease stage peripheral arterial disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Soft palate squamous cell carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Removal of superoxide	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hyperpolarization of monocyte-derived dendritic cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Neuroblastoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Chemorepulsion of neutrophils	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Dyskeratosis congenita or aplastic anemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Philadelphia chromosome negative leukemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Age-related macular degeneration	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Aplastic anemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Progressive neuromuscular disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Elimination of dopamine	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Sinus congestion	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Binding of NF-E2 binding site	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Squamous-cell carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Neonatal sepsis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Diffuse lymphoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Adrenal cortex carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Autosomal recessive congenital eye anomaly	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Head and neck adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Mature T-cell neoplasm	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Development of urinary tract tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Transitional-cell carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Pain in lower limb	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Diffuse small-cell lymphoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of thin ventricular wall	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Asbestosis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Dephosphorylation of ADP	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Congenital aplastic anemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cortical dysplasia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Uterine leiomyoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of cerebellar cortex	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Thyroid oncocytoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormality of peripheral nervous system	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Ulcer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of neurons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Germ cell tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Excitatory postsynaptic current	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hepatitis C virus-related hepatocellular carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Anaplastic carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Vocalization	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Mass of tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hypoexcitation of sympathetic neuron	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Chronic inflammatory disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Bladder carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Multiple congenital anomalies of skeletal bone	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Progressive parkinsonism	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Duodenal carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Entry into G1 phase of bone cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of dendritic spines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cytochrome c oxidase I deficiency	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Density of axodendritic synapses	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Adhesion of Schwann cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Diameter of sensory axons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of facial nucleus	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Parkinson's disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Excretion of dopamine	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Papillary adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hairpin sperm flagellum	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Drug ototoxicity - deafness	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hereditary cancer-predisposing syndrome	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Radiosensitivity of cervical cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Early stage kidney disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Thyroid nodule	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Alzheimer disease or frontotemporal dementia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Stabilization of mRNA	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Acute myeloid leukemia with recurrent genetic abnormalities	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of central nervous system	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Neonatal late-onset sepsis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Delay in initiation of calcium response of cardiomyocytes	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Alzheimer disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Early stage tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Stage I-IV non-small cell lung cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Reactivation of cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Grade 2-3 glioma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Innervation of Purkinje cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Low-grade lymphoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hyperpolarization of epithelial cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Area of left common carotid artery	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Metastatic neuroendocrine carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Nonsquamous non-small cell lung carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Upper aero-digestive squamous cell carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal growth in endometrium	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Bladder tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Chorea	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Chronic kidney disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Differentiation of hair shaft progenitor cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Chemoresistant acute myeloid leukemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Delay in cytokinesis of lung cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Metastatic carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Familial mitochondrial disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Gastric adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of cerebrum	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Scar tissue	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Homologous recombination repair of cervical cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Osteolytic bone disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Dyskinesia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Extrapulmonary small cell carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormality of peripheral ganglia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Gastroesophageal adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Argyrophilic grain disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Nonaka myopathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of neuroglia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Malabsorption	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Formation of spliceosomes	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Size of cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Uterine cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Androgen receptor signaling pathway	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Degeneration of supporting cell layer of inner ear	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+G1 phase of colorectal cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal quantity of white adipose tissue	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Angiogenesis of bone marrow	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of brain	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of actin stress fibers	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+G1 phase of uterine cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hypogonadotropic hypogonadism 19 without anosmia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Degeneration of elastic lamina	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Malignant connective or soft tissue neoplasm	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Delta plus thalassemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Accumulation of M1-like macrophages	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Arrest in interphase of lung cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Polyneuropathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Refractory tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Deficiency of motor neurons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Area of right common carotid artery	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Active stage bursitis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of cochlear nucleus	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Follicular thyroid tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Ovarian carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Development of Henle's loop	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Differentiation of cervical cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+De Sanctis-Cacchione syndrome	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hepatitis B surface antigen-negative hepatitis C virus negative hepatocellular carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+High grade endometrial cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Mood Disorders	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Thyroid gland tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Solitary thyroid nodule	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Metastatic non-small cell lung carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Adenocarcinoma of the small bowel	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cognitive flexibility	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cognitive stability	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Proliferation of myometrial cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Prepulse inhibition	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Entry into G1 phase of sarcoma cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of hippocampus	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Waldenström macroglobulinemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Recognition of neurons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Mitochondrial complex I deficiency	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Autosomal recessive spinocerebellar ataxia type 11	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Density of excitatory synapses	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Axial spondyloarthritis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Pancreatic lesion	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Oral cavity carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Size of brain	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Aortic valve disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Familial neurodevelopmental disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Benign cold thyroid nodule	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Interphase of lung cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+T-cell leukemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Adenosquamous ovarian carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Recurrent myoglobinuria	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Quantity of lymphoma cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Delay in initiation of repopulation of adipocytes	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Rheumatoid arthritis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Movement of rodents	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Formation of ribosome	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Invasion of hepatocellular carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Size of hepatocytes	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Kindling	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Mental retardation	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Development of spiral ganglion cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Arrest in G0/G1 phase transition of hematopoietic progenitor cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Active stage ankylosing spondylitis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Primary dysmenorrhea	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Contact repulsion of axons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+G1 phase of lung cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Constitutional bone marrow failure syndrome	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of stem cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Pelvic serous carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Catecholamine-secreting tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Innervation of tissue	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Quantity of 2-arachidonoylglycerol	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Development of pontine nucleus	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Temporomandibular joint disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Infiltrating ductal carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Arrest in interphase of sarcoma cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Gastric carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Formation of squamosal bone	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Differentiation of skeletal muscle fibers	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Clustering of phosphatidylinositol 4,5-diphosphate	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Dilation of ureter	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Kidney clear cell tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Onset of motor neuron disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Nuclear type 1 mitochondrial complex iv deficiency	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Intellectual disability and congenital malformations	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of head	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Congenital mental retardation	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Adenocarcinoma in right upper lobe of lung	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Neddylation of protein	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Thyroid gland adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Mitochondrial encephalomyopathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of neurites	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Esophageal adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Ingestion of cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Stabilization of plasma membrane	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Familial motor neuron disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Uterine corpus endometrioid carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Plasma cell dyscrasia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Metastatic lung carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of brain cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Brain atrophy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of cerebral cortex	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Growth of Candida parapsilosis ATCC 90018	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Pelvic adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Acetylation of protein	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Psoriasis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Invasive carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hypotonic syndrome	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hyperexcitation of sensory neurons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Bone pain	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Loss of brain cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Mixed neoplasia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Syndromic X-linked mental retardation	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of sensory epithelium	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Stage I non-small cell lung carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Endoplasmic reticulum stress response of tumor cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of axons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Grade 3 malignant glioma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Conjugation of bone marrow-derived dendritic cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Female genital tract adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Diabetic nephropathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Arrest in G2 phase	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Delay in cytokinesis of carcinoma cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hemangioblastoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Interphase of bone cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Refolding of protein	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Degeneration of sensory axons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Peyronie disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of cochlear duct	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Diaphragmatic hernia 3	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Upper aerodigestive tract carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Autosomal dominant encephalopathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Stage I-II non-small cell lung cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Formation of rhombencephalon	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Chronic obstructive pulmonary disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Autosomal dominant mental retardation	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Small intestine carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Diapedesis of macrophages	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Arrest in G1 phase of tumor cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Chemorepulsion	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of cardiovascular system	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Loss of neurons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Dementia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Diamond-Blackfan anemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Area of synaptic spine	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Neurocutaneous syndrome	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Refractory myeloid leukemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Uterine smooth muscle tumor	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Ovarian cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Elongation of sensory axons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Accumulation of milk fat globules	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of head	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Small B-cell lymphocytic lymphoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Familial skewed X inactivation	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Benign thyroid nodule	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Formation of synaptic vesicles	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+CADASIL 2	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+X linked autism	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Childhood-onset neurodegeneration with ataxia, tremor, optic atrophy and cognitive decline	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Urothelial transitional cell carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Metabolism of ribonucleotide	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Congenital anemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of axons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of suprachiasmatic nucleus	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+PANDAS syndrome	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of forebrain	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Charcot-Marie-Tooth disease type 2	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Lower respiratory tract disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Uterine corpus cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Oncogene-induced senescence of fibroblast cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Uterine carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Formation of cerebellum	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+HELIX syndrome	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Bockenheimer disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Nuclear type 1 mitochondrial complex I deficiency	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Invasive ductal breast carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Myelopoiesis of hematopoietic cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Hepatitis B virus-related hepatocellular carcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Development of outer medullary collecting duct	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Endometrial adenocarcinoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Closure of wound	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Reduced kidney function	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Ankle sprain	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Abnormal morphology of cerebellum	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Severe psychological disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of cerebral cortex	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Pervasive developmental disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Homeostasis of metal ion	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Homeostasis of transition metal ion	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Shape-induced differentiation of keratinocytes	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Creutzfeldt-Jakob disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Attachment of thyroid tumor cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Familial psychiatric disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Size of neurons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Healing of dermal fibroblasts	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Neuronal migration disorder	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Schizophrenia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Cytotoxicity of cyclosporin A	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Amyotrophic lateral sclerosis	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+CARASIL syndrome	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Indolent non-Hodgkin lymphoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Familial dementia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Benign pelvic disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Huntington Disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of nervous tissue	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Female genital tract cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Grade 3-4 glioma cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Formation of hyaluronan cable-like structure	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of neurites	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of reticulocytes	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Delay in G1/S phase transition of chondrocytes	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Projection of axons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Resorptive capacity of osteoclasts	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Rett Syndrome	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Autosomal recessive hereditary arthro-ophthalmopathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Elimination of motor neurons	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Atrophoderma vermiculatum	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Chronic pulmonary disease	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Quantity of neurites	N/A	N/A	N/A	N/A	N/A	N/A	N/A	0.0
+Overriding aorta	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Arrest in G2 phase of lung cancer cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Frontotemporal dementia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Advanced Dupuytren contracture	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Urothelial cancer	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Refractory leukemia	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Autosomal dominant neuropathy	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Synaptic transmission of cerebral cortex cells	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Morphology of thyroid tumor cell lines	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Quantity of autophagic vacuoles	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Synaptic transmission of intercellular junctions	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Development of macula densa	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Invasive cancer of the upper aerodigestive tract	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Dysgerminoma	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+Adipogenesis of fibroblasts	N/A	N/A	N/A	N/A	N/A	N/A	N/A	N/A

@@ -1,0 +1,156 @@
+---
+title: "Processing Ingenuity Pathway Analysis output of HD and Ctr competition striata"
+author: "John Mariani"
+date: "12/6/2022"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "..")
+```
+
+
+```{r, echo = TRUE, message=FALSE, warning=FALSE}
+library(data.table)
+library(tidyverse)
+library(xlsx)
+
+```
+
+# Load IPA comparison output data (Canonical, Functional and Upstream Signaling) pValues and Z-Scores
+
+```{r}
+deRubric <- read.csv("data_for_import/deRubric.csv")
+
+goCats <- c("EIF2 Signaling", "LARP1 Signaling", "MLXIPL Signaling", "mTOR Signaling", "MYC Signaling", "MYCN Signaling", "Oxidative Phosphorylation", "RICTOR Signaling", "Synthesis of protein", "TP53 Signaling", "YAP1 Signaling")
+
+
+CANpval <- fread("data_for_import/CanonicalP.txt", skip = 2)
+CANzscore <- fread("data_for_import/CanonicalZ.txt", skip = 2)
+
+FUNpval <- fread("data_for_import/FunctionalP.txt", skip = 2)
+FUNzscore <- fread("data_for_import/FunctionalZ.txt", skip = 2)
+
+UPpval <- fread("data_for_import/UpstreamP.txt", skip = 2)
+UPzscore <- fread("data_for_import/UpstreamZ.txt", skip = 2)
+
+
+```
+
+# For IPA data
+
+```{r}
+
+UPpval$`Upstream Regulators` <- paste0(UPpval$`Upstream Regulators`, " Signaling")
+UPzscore$`Upstream Regulators` <- paste0(UPzscore$`Upstream Regulators`, " Signaling")
+
+
+names(FUNpval)
+
+formatIPAp <- function(ipa){
+  temp <- ipa
+  names(temp) <- gsub("(.*).sig.*","\\1",names(temp))
+  names(temp) <- gsub("(.*).Sig.*","\\1",names(temp))
+  temp[temp == "N/A"] <- 0
+  names(temp)[1] <- "Signaling"
+  temp <-temp  %>% tidyr::pivot_longer(cols = names(temp)[2:9], names_to = "Comparison", values_to = "Pval")
+  return(temp)
+}
+
+formatIPAz <- function(ipa){
+  temp <- ipa
+  names(temp) <- gsub("(.*).sig.*","\\1",names(temp))
+  names(temp) <- gsub("(.*).Sig.*","\\1",names(temp))
+  temp[temp == "N/A"] <- 0
+  names(temp)[1] <- "Signaling"
+  temp <-temp  %>% tidyr::pivot_longer(cols = names(temp)[2:9], names_to = "Comparison", values_to = "Zscore")
+  return(temp)
+}
+
+CANpval <- formatIPAp(CANpval)
+CANzscore <- formatIPAz(CANzscore)
+FUNpval <- formatIPAp(FUNpval)
+FUNzscore <- formatIPAz(FUNzscore)
+UPpval <- formatIPAp(UPpval)
+UPzscore <- formatIPAz(UPzscore)
+
+
+
+
+UPgo <- merge(UPpval, UPzscore)
+FUNgo <- merge(FUNpval, FUNzscore)
+CANgo <- merge(CANpval, CANzscore)
+
+UPgo$category <- "Upstream"
+FUNgo$category <- "Functional"
+CANgo$category <- "Canonical"
+
+GO <- rbind(UPgo, FUNgo)
+GO <- rbind(GO, CANgo)
+GO <- merge(GO, deRubric, by.x = "Comparison", by.y = "Comparison")
+
+GO$Zscore <- as.numeric(GO$Zscore)
+
+```
+
+
+
+
+# Write out extended table
+```{r}
+formatGO <- function(GO, paradigm){
+  temp <- GO[GO$Paradigm == paradigm,]
+  temp <- temp[,c(2,3,4,5,7)]
+  names(temp)[[5]] <- "Comparison"
+  temp <- temp[order(temp$Pval, decreasing = T),]
+  return(temp)
+}
+
+temp <- formatGO(GO, "Allograft")
+
+
+# write.xlsx(formatGO(GO, "Allograft"), "ExtendedDataTables/Extended Data Table 2-WT vs HD hGPC in competition DE GOs and pathways.xlsx", 
+#            sheetName= "All IPA Terms",
+#            col.names=T, row.names=F, append=T)
+# 
+# write.xlsx(formatGO(GO, "Isograft"), "ExtendedDataTables/Extended Data Table 4-Isogenic Young vs Older-DE GOs and pathways.xlsx", 
+#            sheetName= "All IPA Terms",
+#            col.names=T, row.names=F, append=T)
+
+
+```
+
+# Write out table for figure graphs
+```{r}
+
+GO <- GO[GO$Signaling %in% goCats,]
+
+
+GOlevels <- c("WT Ctr vs HD Ctr", "WT Allograft vs HD Allograft", "WT Allograft vs WT Ctr", "HD Allograft vs HD Ctr",
+              "Young WT Ctr vs Aged WT Ctr", "Young WT Isograft vs Aged WT Isograft", "Young WT Isograft vs Young WT Ctr", "Aged WT Isograft vs Aged WT Ctr")
+
+
+
+
+GO[GO$Pval < -log10(0.05),]$Pval <- -1
+
+
+
+GO$Signaling <- factor(GO$Signaling, levels = goCats)
+GO$Label <- factor(GO$Label, levels = GOlevels)
+
+write.csv(GO, "data_for_import/GO.csv")
+
+
+
+
+```
+
+
+
+```{r}
+
+sessionInfo()
+
+```

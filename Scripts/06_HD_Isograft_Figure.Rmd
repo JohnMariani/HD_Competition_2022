@@ -1,0 +1,268 @@
+---
+title: "Analysis for generation of Figure 4 - HD Isograft Model"
+author: "John Mariani"
+date: "12/6/2022"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "..")
+```
+
+
+```{r, echo = TRUE, message=FALSE, warning=FALSE}
+library(Seurat)
+library(scPlottingTools)
+library(ggplot2)
+library(tidyr)
+library(FSA)
+library(dplyr)
+library(MAST)
+library(FSA)
+library(plyr)
+library(xlsx)
+library(patchwork)
+library(ggplot2)
+library(scales)
+library(ggVennDiagram)
+
+`%not in%` <- function(x, table) is.na(match(x, table, nomatch = NA_integer_))
+
+
+axisTitleSize <- 8
+axisTitleSize <- 6
+axisTextSize <- 6
+labelFont = 6
+titleFont = 8
+
+```
+
+
+# Load and subset pardigm data
+
+```{r}
+merged <- readRDS("RDS/mergedUpdated.rds")
+
+
+dimPlotColors <- c(cGPC = "green3", GPC = "orange1", "Immature Oligodendrocyte" = "royalblue2", APC = "brown3", Astrocyte = "purple3", NPC = "magenta")
+cellTypeOrder <- c("cGPC", "GPC", "Immature Oligodendrocyte", "NPC", "APC", "Astrocyte")
+merged$CellType <- factor(merged$CellType, levels = cellTypeOrder)
+
+g19RescueSubset <- subset(merged, subset = otherGroup %in% c("G19 Neonatal Alone Late", "G19 Neonatal CtrlRescue", "G19 Adult CtrlRescue", "G19 Adult Alone Late"))
+g19RescueSubset$Label <- mapvalues(g19RescueSubset$otherGroup, c("G19 Neonatal Alone Late", "G19 Neonatal CtrlRescue", "G19 Adult CtrlRescue", "G19 Adult Alone Late"), c("Aged WT Ctr", "Aged WT Isograft", "Young WT Isograft", "Young WT Ctr"))
+g19RescueSubset$Label <- factor(g19RescueSubset$Label, levels = c("Young WT Ctr", "Young WT Isograft", "Aged WT Ctr", "Aged WT Isograft"))
+
+
+
+
+
+```
+
+# Make Cell Type Stacked Plot
+
+```{r}
+g19RescueSubsetMeta <- g19RescueSubset@meta.data
+
+g19RescueStackedCelltype <- as.data.frame(table(g19RescueSubsetMeta$Label, g19RescueSubsetMeta$CellType))
+
+
+
+
+stackedPlotIsograft <- ggplot(g19RescueStackedCelltype, aes(fill = Var2, y = Freq, x = Var1))+
+  geom_bar(position = "fill", stat = "identity")+
+  guides(fill = guide_legend(override.aes = list(size = .6))) +
+  #scale_fill_manual(values = palette )+
+  labs(y = "Percent", x = "Sort", fill = "Cell Type") + theme_classic() + scale_y_continuous(expand = c(0,0)) + ylab("Percent Identity") + theme(plot.tag = element_text(size = 12), legend.key.size = unit(.6, "lines"), text = element_text(size = labelFont), legend.position = "bottom", axis.text.x =element_text(angle = 45, vjust = .5, hjust = .5)) + xlab(element_blank()) +
+  theme(axis.text = element_text(size = axisTextSize), axis.title = element_text(size = axisTitleSize), plot.title = element_text(size = 18), legend.text = element_text(size = 18)) + ylab(element_blank()) +
+  scale_fill_manual(values = dimPlotColors) + NoLegend()
+
+stackedPlotIsograft
+
+#write.xlsx("SourceData/Fig4SourceData.xlsx", sheetName = "Fig4D", x = g19RescueStackedCelltype, row.names = F)
+
+
+```
+
+# Make DE Venn Diagram
+```{r}
+
+allDE <- read.delim("DE/allDE.txt")
+table(allDE$Label)
+
+
+isograftVennGenes <- list("Young WT Ctr vs Aged WT Ctr" = allDE[allDE$Label == "Young WT Ctr vs Aged WT Ctr",]$Gene,
+                        "Young WT Isograft vs Aged WT Isograft" = allDE[allDE$Label == "Young WT Isograft vs Aged WT Isograft",]$Gene,
+                        "Young WT Isograft vs Young WT Ctr" = allDE[allDE$Label == "Young WT Isograft vs Young WT Ctr",]$Gene,
+                        "Aged WT Isograft vs Aged WT Ctr" = allDE[allDE$Label == "Aged WT Isograft vs Aged WT Ctr",]$Gene)
+
+isograftVennGenes <- lapply(isograftVennGenes, as.character)
+
+
+isograftVennGG <- ggVennDiagram(isograftVennGenes, label = "count", label_alpha = 1, ) + theme(legend.position = "none")+ scale_fill_gradient(low="white",high = "white") + scale_colour_manual(values = c("dodgerblue", "forestgreen", "orange", "darkorchid3"))
+
+isograftVennGG
+
+
+```
+
+# Make G2M Plot and calculate statistics
+
+```{r}
+metaMerged <- merged@meta.data
+
+cellTypes <- c("cGPC", "GPC")
+names(metaMerged)
+
+cellCycleDF <- metaMerged[,c("S.Score", "G2M.Score", "Phase", "otherGroup", "CellType", "newLabel", "Transplant", "Cell")]
+cellCycleDF <- cellCycleDF[cellCycleDF$CellType %in% cellTypes,]
+
+isograftBoxPlot <- ggplot(cellCycleDF[cellCycleDF$otherGroup %in% c("G19 Adult Alone Late", "G19 Adult CtrlRescue", "G19 Neonatal Alone Late", "G19 Neonatal CtrlRescue"),], aes(fill = newLabel, y = G2M.Score)) + geom_boxplot(notch = T, outlier.shape = NA) +
+  ylim(c(-.18,.11)) + theme_classic() + ylab("G2M Score") + NoLegend()
+
+isograftBoxPlot
+
+
+dunnTest(data = cellCycleDF[cellCycleDF$otherGroup %in% c("G19 Adult Alone Late", "G19 Adult CtrlRescue", "G19 Neonatal Alone Late", "G19 Neonatal CtrlRescue"),],
+         method = "bh",
+         G2M.Score ~ newLabel)
+
+
+sourceData4E <- cellCycleDF[cellCycleDF$otherGroup %in% c("G19 Adult Alone Late", "G19 Adult CtrlRescue", "G19 Neonatal Alone Late", "G19 Neonatal CtrlRescue"),]
+sourceData4E <- sourceData4E[,c(2,5,6)]
+sourceData4E$cellName <- row.names(sourceData4E)
+
+#write.xlsx("SourceData/Fig4SourceData.xlsx", sheetName = "Fig4E", x = sourceData4E, row.names = F, append = T)
+
+
+```
+
+# Lay out top of figure
+
+```{r}
+
+table(g19RescueSubset$Label)
+dim(g19RescueSubset)
+integratedIsograftGG <- DimPlotCustom(g19RescueSubset, group.by = "CellType") + scale_fill_manual(values = dimPlotColors) + ggtitle("Integrated - 9422 Cells") + coord_flip() + scale_y_reverse()
+splitIsoograftGG <- DimPlotCustom(g19RescueSubset, group.by = "CellType", split.by = "Label", nrow = 2) & NoLegend() & theme(axis.title = element_blank()) & scale_fill_manual(values = dimPlotColors) & coord_flip() & scale_y_reverse()
+
+splitIsoograftGG[[1]] <- splitIsoograftGG[[1]] + ggtitle("Young WT Ctr - 2644 Cells")
+splitIsoograftGG[[2]] <- splitIsoograftGG[[2]] + ggtitle("Young WT Isograft - 1871 Cells")
+splitIsoograftGG[[3]] <- splitIsoograftGG[[3]] + ggtitle("Aged WT Ctr - 1661 Cells")
+splitIsoograftGG[[4]] <- splitIsoograftGG[[4]] + ggtitle("Aged WT Isograft - 3246 Cells")
+
+
+(plot_spacer() / integratedIsograftGG) | splitIsoograftGG | stackedPlotIsograft | (isograftBoxPlot / isograftVennGG)
+
+```
+
+# Make IPA Graph
+```{r}
+
+GO <- read.csv("data_for_import/GO.csv")
+GOlevels <- c("WT Ctr vs HD Ctr", "WT Allograft vs HD Allograft", "WT Allograft vs WT Ctr", "HD Allograft vs HD Ctr",
+              "Young WT Ctr vs Aged WT Ctr", "Young WT Isograft vs Aged WT Isograft", "Young WT Isograft vs Young WT Ctr", "Aged WT Isograft vs Aged WT Ctr")
+
+goCats <- c("EIF2 Signaling", "LARP1 Signaling", "MLXIPL Signaling", "mTOR Signaling", "MYC Signaling", "MYCN Signaling", "Oxidative Phosphorylation", "RICTOR Signaling", "Synthesis of protein", "TP53 Signaling", "YAP1 Signaling")
+
+GO$Signaling <- factor(GO$Signaling, levels = goCats)
+GO$Label <- factor(GO$Label, levels = GOlevels)
+
+isograftGG <- ggplot(GO[GO$Paradigm == "Isograft",]) +
+  geom_point(aes(x = Label, y = Signaling, size = Pval, colour = Zscore)) +
+  scale_colour_gradient2(low = "green4", mid = "grey", high = "red2", midpoint = 0, guide = guide_colourbar(direction = "vertical", title = "Activation\nZ-Score", title.position = "left", title.hjust = .5)) +
+  theme_bw() +
+  theme(legend.position = "bottom", axis.title.x = element_blank(), axis.title.y = element_blank(), legend.box = "horizontal", axis.text.y = element_text(size = 10), legend.title = element_text(angle = 90)) +
+  labs(size="-Log10 P-Value") + scale_size(range = c(0,12), limits = c(0,100),breaks = c(25,50, 75, 100)) 
+
+isograftGG
+
+sourceData4G <- GO[GO$Paradigm == "Isograft",]
+sourceData4G <- sourceData4G[,c(3,4,5,6,8)]
+                   
+#write.xlsx("SourceData/Fig4SourceData.xlsx", sheetName = "Fig4G", x = sourceData4G, row.names = F, append = T)
+
+
+```
+
+# Make HM of curated Genes
+
+```{r}
+
+allLogFC <- read.delim("DE/allLogFC.txt")
+allLogFC$Label <- factor(allLogFC$Label, levels = GOlevels)
+
+
+makeHM <- function(genes, paradigm, returnGG = T){
+  temp <- allLogFC[allLogFC$Gene %in% genes & allLogFC$Paradigm == paradigm,]
+  temp$sig <- ifelse(temp$FDR < 0.0001 & abs(temp$logFC) > 0.15, yes = "****", 
+                     ifelse(temp$FDR < 0.001 & abs(temp$logFC) > 0.15, yes = "***",
+                            ifelse(temp$FDR < 0.01 & abs(temp$logFC) > 0.15, yes = "**",
+                                   ifelse(temp$FDR < 0.05 & abs(temp$logFC) > 0.15, yes = "*", no = ""))))
+  tempCluster <- temp[,c("Gene", "Label", "logFC")] %>% pivot_wider(values_from = "logFC", names_from = "Label")
+  tempCluster <- data.frame(row.names = tempCluster$Gene, tempCluster[,2:5])
+  tempClusterOrder <- hclust(dist(tempCluster))$order
+  tempClusterOrder <- row.names(tempCluster)[tempClusterOrder]
+  temp$Gene <- factor(temp$Gene, levels = tempClusterOrder)
+  if(returnGG == T) {
+    return(ggplot(temp, aes(fill = logFC, x = Label, y = Gene)) + geom_tile() + scale_fill_gradient2(low = "forestgreen", mid = "lightgrey", high = "red2", midpoint = 0) +
+           scale_x_discrete(expand = c(0,0)) + theme(legend.position = "left", axis.title = element_blank())  + geom_text(aes(label=sig, vjust = 1)))  
+  } else {
+    return(temp)
+  }
+}
+
+
+isograftGenes <- c("FIBIN", "PCDHGB6", "PMP2", "GRB14", "MT3", "TMSB4X", "PDGFRA", "APOE", "HSPA1B", "DNAJB1", "LY6H", "RARRES2", "BCAS1", "JUN", "FOS", "SPARCL1", "NEU", "CASK", "SPRY4", "ARPP21", "MEG3", "CCND2")
+
+isograftHM <- makeHM(isograftGenes, "Isograft", returnGG = T)
+isograftHM
+
+sourceData4H <- makeHM(isograftGenes, "Isograft", returnGG = F)
+sourceData4H <- sourceData4H[,c(2,4,5,6,8)]
+
+
+#write.xlsx("SourceData/Fig4SourceData.xlsx", sheetName = "Fig4H", x = sourceData4H, row.names = F, append = T)
+
+
+```
+
+# Make Ribosomal Violins
+
+```{r}
+
+allDE$Label <- factor(allDE$Label, levels = GOlevels)
+
+riboIsograft <- allDE[allDE$Gene %in% unique(grep(paste(c("RPS", "RPL"),collapse="|"), 
+                                                allDE$Gene, value=TRUE)) & allDE$Paradigm == "Isograft",]
+
+riboIsograftGG <- ggplot(riboIsograft, aes(Label, Log2FC)) +
+  geom_violin(aes(fill = Label)) + theme_bw() +  theme(legend.position = "none", axis.title.x = element_blank(), axis.text.x = element_blank())  +scale_fill_manual(values = c("dodgerblue", "forestgreen", "orange", "darkorchid3")) +
+  ylab("DE Ribosomal Gene\nLog2 Fold Change")
+
+riboIsograftGG
+
+sourceData4I <- riboIsograft[,c(2:5,7)]
+#write.xlsx("SourceData/Fig4SourceData.xlsx", sheetName = "Fig4I", x = sourceData4I, row.names = F, append = T)
+
+
+```
+
+# Save Top and Bottom of figure
+
+```{r} 
+
+((plot_spacer() / integratedIsograftGG) | splitIsoograftGG | stackedPlotIsograft | (isograftBoxPlot / isograftVennGG)) + plot_layout(widths = c(1,1,.5,.8))
+ggsave("Figures/IsograftTop.pdf", width = 12, height = 6)
+
+
+isograftGG |(isograftHM/ riboIsograftGG) + plot_layout(heights = c(3,1))
+ggsave("Figures/IsograftBottom.pdf", width = 12, height = 6)
+
+```
+
+```{r}
+
+sessionInfo()
+
+```

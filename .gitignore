@@ -37,3 +37,12 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+*Archive
+*Backup
+*.Rproj
+Figures/
+SourceData/
+ExtendedDataTables/
+RDS/
+
