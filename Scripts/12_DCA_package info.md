@@ -12,11 +12,6 @@ import dca
 warnings.simplefilter(action="ignore", category = FutureWarning)
 ```
 
-    /scratch/sgoldman_lab/.conda/envs/deepNN_v0.2/lib/python3.8/site-packages/anndata/core/anndata.py:17: FutureWarning: pandas.core.index is deprecated and will be removed in a future version. The public classes are available in the top-level namespace.
-      from pandas.core.index import RangeIndex
-
-
-
 ```python
 print('\n'.join(f'{m.__name__}=={m.__version__}' for m in globals().values() if getattr(m, '__version__', None)))
 ```
