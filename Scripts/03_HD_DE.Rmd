@@ -1,0 +1,437 @@
+---
+title: "Processing and Differential Expression of HD and Ctr competition striata"
+author: "John Mariani"
+date: "12/6/2022"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "..")
+```
+
+
+```{r, echo = TRUE, message=FALSE, warning=FALSE}
+library(Seurat)
+library(scPlottingTools)
+library(ggplot2)
+library(tidyr)
+library(FSA)
+library(dplyr)
+library(MAST)
+library(FSA)
+library(plyr)
+library(xlsx)
+library(patchwork)
+library(ggplot2)
+library(scales)
+
+
+
+
+options(future.globals.maxSize = 16000 * 1024^2)
+
+`%not in%` <- function(x, table) is.na(match(x, table, nomatch = NA_integer_))
+
+
+
+
+labelFont = 6
+titleFont = 8
+
+#### Make sig
+deFilter <- function(de, fdrCutoff = 0.05, logFCcutoff = .15){
+  temp <- de[de$FDR < fdrCutoff & abs(de$logFC) > logFCcutoff,]
+  #temp <- temp[complete.cases(temp),]
+  temp <- temp[temp$Gene %not in% c("EGFP", "mCherry"),]
+  names(temp) <- c("Gene", "PVal", "FDR", "Log2FC")
+  temp <- temp[order(temp$FDR, decreasing = F),]
+  return(temp)
+}
+
+
+
+writeDE <- function(de){
+  temp <- de
+  temp$Gene <- row.names(temp)
+  temp <- temp[,c(4,1,2,3)]
+  write.table(temp,paste0("DE/All/", deparse(substitute(de)), ".txt"), row.names = F, quote = F, sep = "\t")
+}
+
+
+
+writeSig <- function(de){
+  write.table(de,paste0("DE/Sig/", deparse(substitute(de)), ".txt"), row.names = F, quote = F, sep = "\t")
+  
+}
+
+
+readDE <- function(de){
+  read.delim(paste0("DE/All/", de, ".txt"))
+}
+
+
+readSig <- function(de){
+  read.delim(paste0("DE/Sig/", de, ".txt"))
+}
+
+```
+
+# Load data and add details from scVI/scanPY
+
+```{r}
+merged <- readRDS("RDS/HD_Competition_Preprocessed.rds")
+DefaultAssay(merged) <- "RNA"
+dim(merged)
+
+
+
+merged <- NormalizeData(merged)
+merged <- ScaleData(merged)
+merged <- FindVariableFeatures(merged)
+
+# Run these to jam SCVI UMAP and leiden clusters in
+merged <- RunPCA(merged, verbose = FALSE)
+merged <- FindNeighbors(merged, dims = 1:50, verbose = FALSE)
+merged <- RunUMAP(merged, dims = 1:50, verbose = FALSE)
+merged <- FindClusters(merged, verbose = FALSE, resolution = .2)
+
+
+umapEmbeddings <- read.csv("data_for_import/umapEmbeddings.csv", header = F)
+row.names(umapEmbeddings) <- Cells(merged)
+names(umapEmbeddings) <- c("UMAP_1", "UMAP_2")
+merged@reductions$umap@cell.embeddings <- as.matrix(umapEmbeddings)
+
+leiden_clusters <- read.csv("data_for_import/leidenClusters.csv")
+merged$leiden_clusters <- factor(leiden_clusters$leiden_scVI, levels = 0:11)
+
+Idents(merged) <- merged$leiden_clusters
+
+
+DimPlot(merged, label = T)
+
+merged <- RenameIdents(merged, "3" = "cGPC")
+merged <- RenameIdents(merged, "11" = "NPC")
+merged <- RenameIdents(merged, "1" = "APC")
+merged <- RenameIdents(merged, "9" = "Astrocyte")
+merged <- RenameIdents(merged, "2" = "Immature Oligodendrocyte")
+merged <- RenameIdents(merged, "0" = "GPC")
+merged <- RenameIdents(merged, "4" = "GPC")
+merged <- RenameIdents(merged, "5" = "GPC")
+merged <- RenameIdents(merged, "6" = "GPC")
+merged <- RenameIdents(merged, "7" = "GPC")
+merged <- RenameIdents(merged, "8" = "GPC")
+merged <- RenameIdents(merged, "10" = "GPC")
+
+
+
+merged$CellType <- Idents(merged)
+
+DimPlot(merged)
+
+
+
+
+```
+
+
+# Cell Cycle Scoring
+```{r}
+
+
+s.genes <- cc.genes$s.genes
+g2m.genes <- cc.genes$g2m.genes
+
+#MLF1IP
+s.genes[s.genes %not in% merged@assays$RNA@counts@Dimnames[[1]]] <- "CENPU"
+s.genes[s.genes %not in% merged@assays$RNA@counts@Dimnames[[1]]]
+#FAM64A HN1
+g2m.genes[g2m.genes %not in% merged@assays$RNA@counts@Dimnames[[1]]] <- c("PIMREG", "JPT1")
+g2m.genes[g2m.genes %not in% merged@assays$RNA@counts@Dimnames[[1]]]
+
+merged <- CellCycleScoring(merged, s.features = s.genes, g2m.features = g2m.genes, set.ident = F)
+
+
+```
+
+# Update labeling
+```{r}
+metaMerged <- merged@meta.data
+metaMerged$otherGroup <- paste(metaMerged$Cell, metaMerged$Transplant, metaMerged$Paradigm, sep = " ")
+unique(metaMerged$otherGroup)
+
+table(metaMerged$SampleName)
+
+
+tempLabels <- unique(metaMerged$otherGroup)
+names(tempLabels) <- c("Young WT Ctr", "Young WT Isograft", "Young WT Allograft", "Old WT Ctr", "Old WT Isograft", "Old HD Ctr", "Old HD Allograft")
+metaMerged$newLabel <- plyr::mapvalues(metaMerged$otherGroup, tempLabels, names(tempLabels))
+metaMerged$newLabel <- factor(metaMerged$newLabel, levels = c("Young WT Ctr", "Young WT Isograft", "Young WT Allograft", "Old WT Ctr", "Old WT Isograft", "Old HD Ctr", "Old HD Allograft"))
+
+
+merged@meta.data <- metaMerged
+
+DimPlot(merged, split.by = "otherGroup")
+DimPlot(merged, split.by = "newLabel")
+
+
+```
+
+# GPC Differential expression with MAST
+
+```{r}
+merged$ngeneson <- scale(merged$nFeature_RNA)
+
+##### Run if you haven't computed DE yet
+
+### Make GPC
+GPC <- subset(merged, subset = CellType %in% c("GPC"))
+
+data.use <- GetAssayData(object = GPC, slot = "data")
+fdat <- data.frame(rownames(x = data.use))
+colnames(x = fdat)[1] <- "primerid"
+rownames(x = fdat) <- fdat[,1]
+cData <- as.data.frame(GPC@meta.data)
+cData$wellKey <- row.names(cData)
+
+
+GPC.sca <- MAST::FromMatrix(
+  exprsArray = as.matrix(x = data.use),
+  check_sanity = T,
+  cData = cData,
+  fData = fdat)
+
+genes.keep <- freq(GPC.sca) > .03
+GPC.sca <- GPC.sca[genes.keep,]
+dim(GPC.sca)
+
+
+
+#### DE for all
+
+modelMAST <- as.formula(
+  object = "~0+ngeneson+otherGroup")
+
+
+ZLM <-MAST::zlm(formula = modelMAST, sca = GPC.sca, useContinuousBayes = T)
+saveRDS(ZLM, "RDS/ZLM.rds")
+
+
+
+runLR <- function(z, lrContrast, contrast0, contrast1){
+  temp <- as.data.frame(lrTest(z, as.matrix(lrContrast)))
+  temp$FDR <- p.adjust(p = temp$`hurdle.Pr(>Chisq)`, 'fdr')
+  temp <- temp[,9:10]
+  log2FC <- getLogFC(z, contrast0 = contrast0, contrast1 = contrast1)
+  temp$logFC <- log2FC$logFC
+  return(temp)
+}
+
+colnames(ZLM@coefD)
+```
+
+```{r, echo = T}
+
+
+#otherGroupG19 Adult Alone Late vs otherGroupG19 Neonatal Alone Late
+WT.Adult.Alone.vs.WT.Neonatal.Alone <- runLR(ZLM, c(0,1,0,0,-1,0,0,0), contrast0 = c(0,0,0,0,1,0,0,0), contrast1 = c(0,1,0,0,0,0,0,0))
+
+#otherGroupG19 Adult CtrlRescue vs otherGroupG19 Adult Alone Late
+WT.Adult.CtrlRescue.vs.WT.Adult.Alone <- runLR(ZLM, c(0,-1,1,0,0,0,0,0), contrast0 = c(0,1,0,0,0,0,0,0), contrast1 = c(0,0,1,0,0,0,0,0))
+
+
+#otherGroupG19 Adult Alone Late vs otherGroupG19 Neonatal CtrlRescue
+WT.Adult.CtrlRescue.vs.WT.Neonatal.CtrlRescue <- runLR(ZLM, c(0,0,1,0,0,-1,0,0), contrast0 = c(0,0,0,0,0,1,0,0), contrast1 = c(0,0,1,0,0,0,0,0))
+
+#otherGroupG19 Neonatal CtrlRescue vs otherGroupG19 Neonatal Alone Late
+WT.Neonatal.CtrlRescue.vs.WT.Neonatal.Alone <- runLR(ZLM, c(0,0,0,0,-1,1,0,0), contrast0 = c(0,0,0,0,1,0,0,0), contrast1 = c(0,0,0,0,0,1,0,0))
+
+
+
+
+##### G20 vs G19 comparison
+
+#otherGroupG19 Adult Alone Late vs otherGroupG20 Neonatal Alone Lat
+WT.Adult.Alone.vs.HD.Neonatal.Alone <- runLR(ZLM, c(0,1,0,0,0,0,-1,0), contrast0 = c(0,0,0,0,0,0,1,0), contrast1 = c(0,1,0,0,0,0,0,0))
+
+#otherGroupG19 Adult Rescue vs otherGroupG19 Adult Alone Late
+WT.Adult.Rescue.vs.WT.Adult.Alone <- runLR(ZLM, c(0,-1,0,1,0,0,0,0), contrast0 = c(0,1,0,0,0,0,0,0), contrast1 = c(0,0,0,1,0,0,0,0))
+
+#otherGroupG19 Adult Rescue vs otherGroupG20 Neonatal Rescue
+WT.Adult.Rescue.vs.HD.Neonatal.Rescue <- runLR(ZLM, c(0,0,0,1,0,0,0,-1), contrast0 = c(0,0,0,0,0,0,0,1), contrast1 = c(0,0,0,1,0,0,0,0))
+
+#otherGroupG20 Neonatal Rescue vs otherGroupG20 Neonatal Alone Late
+HD.Neonatal.Rescue.vs.HD.Neonatal.Alone <- runLR(ZLM, c(0,0,0,0,0,0,-1,1), contrast0 = c(0,0,0,0,0,0,1,0), contrast1 = c(0,0,0,0,0,0,0,1))
+
+
+
+writeDE(WT.Adult.Alone.vs.HD.Neonatal.Alone)
+writeDE(WT.Adult.Rescue.vs.WT.Adult.Alone)
+writeDE(WT.Adult.Rescue.vs.HD.Neonatal.Rescue)
+writeDE(HD.Neonatal.Rescue.vs.HD.Neonatal.Alone)
+writeDE(WT.Adult.Alone.vs.WT.Neonatal.Alone)
+writeDE(WT.Adult.CtrlRescue.vs.WT.Adult.Alone)
+writeDE(WT.Adult.CtrlRescue.vs.WT.Neonatal.CtrlRescue)
+writeDE(WT.Neonatal.CtrlRescue.vs.WT.Neonatal.Alone)
+
+# Load DE results if already run
+WT.Adult.Alone.vs.HD.Neonatal.Alone <- readDE("WT.Adult.Alone.vs.HD.Neonatal.Alone")
+WT.Adult.Rescue.vs.WT.Adult.Alone <- readDE("WT.Adult.Rescue.vs.WT.Adult.Alone")
+WT.Adult.Rescue.vs.HD.Neonatal.Rescue <- readDE("WT.Adult.Rescue.vs.HD.Neonatal.Rescue")
+HD.Neonatal.Rescue.vs.HD.Neonatal.Alone <- readDE("HD.Neonatal.Rescue.vs.HD.Neonatal.Alone")
+WT.Adult.Alone.vs.WT.Neonatal.Alone <- readDE("WT.Adult.Alone.vs.WT.Neonatal.Alone")
+WT.Adult.CtrlRescue.vs.WT.Adult.Alone <- readDE("WT.Adult.CtrlRescue.vs.WT.Adult.Alone")
+WT.Adult.CtrlRescue.vs.WT.Neonatal.CtrlRescue <- readDE("WT.Adult.CtrlRescue.vs.WT.Neonatal.CtrlRescue")
+WT.Neonatal.CtrlRescue.vs.WT.Neonatal.Alone <- readDE("WT.Neonatal.CtrlRescue.vs.WT.Neonatal.Alone")
+
+# Filter for significance and FC
+WT.Adult.Alone.vs.HD.Neonatal.Alone.sig <- deFilter(WT.Adult.Alone.vs.HD.Neonatal.Alone)
+WT.Adult.Rescue.vs.WT.Adult.Alone.sig <- deFilter(WT.Adult.Rescue.vs.WT.Adult.Alone)
+WT.Adult.Rescue.vs.HD.Neonatal.Rescue.sig <- deFilter(WT.Adult.Rescue.vs.HD.Neonatal.Rescue)
+HD.Neonatal.Rescue.vs.HD.Neonatal.Alone.sig <- deFilter(HD.Neonatal.Rescue.vs.HD.Neonatal.Alone)
+WT.Adult.Alone.vs.WT.Neonatal.Alone.sig <- deFilter(WT.Adult.Alone.vs.WT.Neonatal.Alone)
+WT.Adult.CtrlRescue.vs.WT.Adult.Alone.sig <- deFilter(WT.Adult.CtrlRescue.vs.WT.Adult.Alone)
+WT.Adult.CtrlRescue.vs.WT.Neonatal.CtrlRescue.sig <- deFilter(WT.Adult.CtrlRescue.vs.WT.Neonatal.CtrlRescue)
+WT.Neonatal.CtrlRescue.vs.WT.Neonatal.Alone.sig <- deFilter(WT.Neonatal.CtrlRescue.vs.WT.Neonatal.Alone)
+
+
+
+writeSig(WT.Adult.Alone.vs.HD.Neonatal.Alone.sig)
+writeSig(WT.Adult.Rescue.vs.WT.Adult.Alone.sig)
+writeSig(WT.Adult.Rescue.vs.HD.Neonatal.Rescue.sig)
+writeSig(HD.Neonatal.Rescue.vs.HD.Neonatal.Alone.sig)
+writeSig(WT.Adult.Alone.vs.WT.Neonatal.Alone.sig)
+writeSig(WT.Adult.CtrlRescue.vs.WT.Adult.Alone.sig)
+writeSig(WT.Adult.CtrlRescue.vs.WT.Neonatal.CtrlRescue.sig)
+writeSig(WT.Neonatal.CtrlRescue.vs.WT.Neonatal.Alone.sig)
+
+```
+
+#Export DE and logFC information
+
+```{r}
+WT.Adult.Alone.vs.HD.Neonatal.Alone.sig$Comparison <- "WT.Adult.Alone.vs.HD.Neonatal.Alone"
+WT.Adult.Rescue.vs.WT.Adult.Alone.sig$Comparison <- "WT.Adult.Rescue.vs.WT.Adult.Alone"
+WT.Adult.Rescue.vs.HD.Neonatal.Rescue.sig$Comparison <- "WT.Adult.Rescue.vs.HD.Neonatal.Rescue"
+HD.Neonatal.Rescue.vs.HD.Neonatal.Alone.sig$Comparison <- "HD.Neonatal.Rescue.vs.HD.Neonatal.Alone"
+WT.Adult.Alone.vs.WT.Neonatal.Alone.sig$Comparison <- "WT.Adult.Alone.vs.WT.Neonatal.Alone"
+WT.Adult.CtrlRescue.vs.WT.Adult.Alone.sig$Comparison <- "WT.Adult.CtrlRescue.vs.WT.Adult.Alone"
+WT.Adult.CtrlRescue.vs.WT.Neonatal.CtrlRescue.sig$Comparison <- "WT.Adult.CtrlRescue.vs.WT.Neonatal.CtrlRescue"
+WT.Neonatal.CtrlRescue.vs.WT.Neonatal.Alone.sig$Comparison <- "WT.Neonatal.CtrlRescue.vs.WT.Neonatal.Alone"
+
+WT.Adult.Alone.vs.HD.Neonatal.Alone$Comparison <- "WT.Adult.Alone.vs.HD.Neonatal.Alone"
+WT.Adult.Rescue.vs.WT.Adult.Alone$Comparison <- "WT.Adult.Rescue.vs.WT.Adult.Alone"
+WT.Adult.Rescue.vs.HD.Neonatal.Rescue$Comparison <- "WT.Adult.Rescue.vs.HD.Neonatal.Rescue"
+HD.Neonatal.Rescue.vs.HD.Neonatal.Alone$Comparison <- "HD.Neonatal.Rescue.vs.HD.Neonatal.Alone"
+WT.Adult.Alone.vs.WT.Neonatal.Alone$Comparison <- "WT.Adult.Alone.vs.WT.Neonatal.Alone"
+WT.Adult.CtrlRescue.vs.WT.Adult.Alone$Comparison <- "WT.Adult.CtrlRescue.vs.WT.Adult.Alone"
+WT.Adult.CtrlRescue.vs.WT.Neonatal.CtrlRescue$Comparison <- "WT.Adult.CtrlRescue.vs.WT.Neonatal.CtrlRescue"
+WT.Neonatal.CtrlRescue.vs.WT.Neonatal.Alone$Comparison <- "WT.Neonatal.CtrlRescue.vs.WT.Neonatal.Alone"
+
+allDE <- rbind(WT.Adult.Alone.vs.HD.Neonatal.Alone.sig,
+               WT.Adult.Rescue.vs.WT.Adult.Alone.sig,
+               WT.Adult.Rescue.vs.HD.Neonatal.Rescue.sig,
+               HD.Neonatal.Rescue.vs.HD.Neonatal.Alone.sig,
+               WT.Adult.Alone.vs.WT.Neonatal.Alone.sig,
+               WT.Adult.CtrlRescue.vs.WT.Adult.Alone.sig,
+               WT.Adult.CtrlRescue.vs.WT.Neonatal.CtrlRescue.sig,
+               WT.Neonatal.CtrlRescue.vs.WT.Neonatal.Alone.sig)
+
+allDE$abs <- abs(allDE$Log2FC)
+
+
+unique(allDE$Comparison)
+
+
+deRubric = data.frame(Comparison = unique(allDE$Comparison), 
+                      Label = c("WT Ctr vs HD Ctr", "WT Allograft vs WT Ctr", "WT Allograft vs HD Allograft", "HD Allograft vs HD Ctr", "Young WT Ctr vs Aged WT Ctr", "Young WT Isograft vs Young WT Ctr", "Young WT Isograft vs Aged WT Isograft", "Aged WT Isograft vs Aged WT Ctr"),
+                      Paradigm = c(rep("Allograft",4), rep("Isograft",4)))
+
+deRubric$Label <- factor(deRubric$Label, levels = c("WT Ctr vs HD Ctr", "WT Allograft vs HD Allograft", "WT Allograft vs WT Ctr", "HD Allograft vs HD Ctr",
+              "Young WT Ctr vs Aged WT Ctr", "Young WT Isograft vs Aged WT Isograft", "Young WT Isograft vs Young WT Ctr", "Aged WT Isograft vs Aged WT Ctr"))
+
+
+
+allDE <- merge(allDE, deRubric, by.x = "Comparison", by.y = "Comparison")
+
+allLogFC <- rbind(WT.Adult.Alone.vs.HD.Neonatal.Alone,
+                  WT.Adult.Rescue.vs.WT.Adult.Alone,
+                  WT.Adult.Rescue.vs.HD.Neonatal.Rescue,
+                  HD.Neonatal.Rescue.vs.HD.Neonatal.Alone,
+                  WT.Adult.Alone.vs.WT.Neonatal.Alone,
+                  WT.Adult.CtrlRescue.vs.WT.Adult.Alone,
+                  WT.Adult.CtrlRescue.vs.WT.Neonatal.CtrlRescue,
+                  WT.Neonatal.CtrlRescue.vs.WT.Neonatal.Alone)
+
+allLogFC <- merge(allLogFC, deRubric, by.x = "Comparison", by.y = "Comparison")
+
+
+write.csv(deRubric, "data_for_import/deRubric.csv")
+write.table(allDE, "DE/allDE.txt", sep = "\t", row.names = F, quote= F)
+write.table(allLogFC, "DE/allLogFC.txt", sep = "\t", row.names = F, quote = F)
+saveRDS(merged, "RDS/mergedUpdated.rds")
+
+```
+
+
+```{r}
+
+formatExtended <- function(sig){
+  temp <- merge(sig, deRubric, by.x = "Comparison", by.y = "Comparison")
+  temp <- temp[,2:6]
+  names(temp)[[5]] <- "Comparison"
+  return(temp)
+}
+
+temp <- formatExtended(WT.Adult.Rescue.vs.HD.Neonatal.Rescue.sig)
+
+
+
+
+```
+
+
+
+# Write out Extended data DE tables
+
+```{r}
+# write.xlsx(formatExtended(WT.Adult.Alone.vs.HD.Neonatal.Alone.sig), "ExtendedDataTables/Extended Data Table 1-WT vs HD hGPC in competition DE genes and controls 4 tabs.xlsx", 
+#            sheetName= "WT Ctr vs HD Ctr",
+#            col.names=T, row.names=F, append=T)
+# 
+# write.xlsx(formatExtended(WT.Adult.Rescue.vs.HD.Neonatal.Rescue.sig), "ExtendedDataTables/Extended Data Table 1-WT vs HD hGPC in competition DE genes and controls 4 tabs.xlsx", 
+#            sheetName= "WT Allograft vs HD Allograft",
+#            col.names=T, row.names=F, append=T)
+# 
+# write.xlsx(formatExtended(WT.Adult.Rescue.vs.WT.Adult.Alone.sig), "ExtendedDataTables/Extended Data Table 1-WT vs HD hGPC in competition DE genes and controls 4 tabs.xlsx", 
+#            sheetName= "WT Allograft vs WT Ctr",
+#            col.names=T, row.names=F, append=T)
+# 
+# write.xlsx(formatExtended(HD.Neonatal.Rescue.vs.HD.Neonatal.Alone.sig), "ExtendedDataTables/Extended Data Table 1-WT vs HD hGPC in competition DE genes and controls 4 tabs.xlsx", 
+#            sheetName= "HD Allograft vs HD Ctr",
+#            col.names=T, row.names=F, append=T)
+# 
+# write.xlsx(formatExtended(WT.Adult.Alone.vs.WT.Neonatal.Alone.sig), "ExtendedDataTables/Extended Data Table 3-Isogenic Young vs Older-DE genes and controls 4 tabs.xlsx", 
+#            sheetName= "Young WT Ctr vs Aged WT Ctr",
+#            col.names=T, row.names=F, append=T)
+# 
+# write.xlsx(formatExtended(WT.Adult.CtrlRescue.vs.WT.Neonatal.CtrlRescue.sig), "ExtendedDataTables/Extended Data Table 3-Isogenic Young vs Older-DE genes and controls 4 tabs.xlsx", 
+#            sheetName= "Young WT Isograft vs Aged WT Isograft",
+#            col.names=T, row.names=F, append=T)
+# 
+# write.xlsx(formatExtended(WT.Adult.CtrlRescue.vs.WT.Adult.Alone.sig), "ExtendedDataTables/Extended Data Table 3-Isogenic Young vs Older-DE genes and controls 4 tabs.xlsx", 
+#            sheetName= "Young WT Isograft vs Young WT Ctr",
+#            col.names=T, row.names=F, append=T)
+# 
+# write.xlsx(formatExtended(WT.Neonatal.CtrlRescue.vs.WT.Neonatal.Alone.sig), "ExtendedDataTables/Extended Data Table 3-Isogenic Young vs Older-DE genes and controls 4 tabs.xlsx", 
+#            sheetName= "Aged WT Isograft vs Aged WT Ctr",
+#            col.names=T, row.names=F, append=T)
+
+
+```
+
+
+```{r}
+sessionInfo()
+```
+
