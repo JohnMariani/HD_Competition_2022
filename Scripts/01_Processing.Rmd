@@ -1,0 +1,123 @@
+---
+title: "Processing of scRNA-Seq Data"
+author: "John Mariani"
+date: "12/10/22"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "..")
+```
+
+##Load Libraries
+
+```{r}
+library(Seurat)
+library(textTinyR)
+library(SeuratObject)
+
+
+options(future.globals.maxSize = 16000 * 1024^2)
+
+`%not in%` <- function(x, table) is.na(match(x, table, nomatch = NA_integer_))
+
+```
+
+##Read in counts and create list of Seurat Objects
+```{r}
+sampleList <- list.files("Matrices/")
+sampleList
+
+# Read in raw matrices and throw out droplets with fewer than 250 umi's
+raw <- sapply(sampleList, function(x) {print(x) ; Read10X(paste0("Matrices/",x,"/star2/hs/raw"))})
+raw <- sapply(raw, function(x) x[,sparse_Sums(x, rowSums = F) > 250])
+sets <- length(raw)
+
+
+#  Convert to list of seurat objects and filter for quality
+ObjectsH <- sapply(c(1:sets), function(x) CreateSeuratObject(raw[[x]], project = sampleList[x]))
+
+
+```
+
+
+##Filter for quality and merge
+```{r}
+for (i in 1:sets) {
+  ObjectsH[[i]] <- PercentageFeatureSet(ObjectsH[[i]], pattern = "^MT-", col.name = "percent.mt")
+  ObjectsH[[i]] <- subset(x = ObjectsH[[i]], subset = nFeature_RNA > 250 & percent.mt < 15)
+}
+
+
+
+merged <- merge(ObjectsH[[1]], y = ObjectsH[2:length(ObjectsH)])
+
+
+dim(merged)
+
+
+metaMerged <- merged@meta.data
+
+
+sampleTable <- read.csv("data_for_import/HDsampleTable.csv")
+
+metaMerged$cellName <- row.names(metaMerged)
+metaMerged <- merge(metaMerged, sampleTable, by.x = "orig.ident", by.y = "sample")
+
+```
+
+## Remove ambiguous cells
+
+```{r}
+
+DefaultAssay(merged) <- "RNA"
+
+
+metaMerged <- merge(metaMerged, FetchData(merged, c("EGFP", "mCherry"), slot = "counts"), by.x = "cellName", by.y = 0)
+
+
+doubleCells <- metaMerged[metaMerged$EGFP>0 & metaMerged$mCherry >0,]
+
+
+metaMerged <- metaMerged[metaMerged$cellName %not in% c(doubleCells$cellName),]
+
+
+# Assign cells that were sorted on the appropriate fluorophore and have appropriate fluorophore expression to the correct sample.
+# Keep cells in the negative captures for those that were singly engrafted
+
+metaMerged$SampleName <- ifelse(metaMerged$EGFP > 0, as.character(metaMerged$EGFP_assign), ifelse(metaMerged$mCherry > 0, as.character(metaMerged$mCherry_assign), as.character(metaMerged$zero_assign)))
+
+
+metaMerged <- metaMerged[metaMerged$SampleName != "Filter",]
+table(metaMerged$initialGroup)
+
+dim(metaMerged)
+
+sampleKey <- read.csv("data_for_import/HDsampleKey.csv")
+
+metaMerged <- merge(metaMerged, sampleKey, by.x = "SampleName", by.y = "SampleName")
+
+table(metaMerged$Group)
+```
+
+##Filter Seurat object and export to H5AD for SCVI integration
+```{r}
+merged <- subset(merged, cells = metaMerged$cellName)
+
+dim(merged)
+
+saveRDS(merged, "RDS/HD_Competition_Preprocessed.rds")
+
+
+library(SeuratDisk)
+SaveH5Seurat(merged, filename = "H5AD/HD_Competition_Preprocessed2.h5Seurat", overwrite = T)
+Convert("H5AD/HD_Competition_Preprocessed2.h5Seurat", dest = "h5ad", overwrite = T)
+
+
+```
+
+##Session Info
+```{r}
+sessionInfo()
+```

@@ -1,0 +1,21 @@
+sample,initialCell,initialFluor,initialTransplant,Paradigm,initialGroup,Capture,initialSampleName,EGFP_assign,mCherry_assign,zero_assign
+G19_RescueCtrl_eGFP_alone,G19,EGFP,Adult,Alone Late,G19 EGFP Adult Alone Late,1,G19 EGFP Adult Alone Late 1,G19 EGFP Adult Alone Late 1,Filter,G19 EGFP Adult Alone Late 1
+G19_RescueCtrl_eGFP,G19,EGFP,Adult,CtrlRescue,G19 EGFP Adult CtrlRescue,3,G19 EGFP Adult CtrlRescue 3,G19 EGFP Adult CtrlRescue 3,Filter,Filter
+Sample_rag1_Rescue_Ctrl_G19_mCherry_Pos,G19,mCherry,Adult,Alone Late,G19 mCherry Adult Alone Late,7,G19 mCherry Adult Alone Late 7,Filter,G19 mCherry Adult Alone Late 7,G19 mCherry Adult Alone Late 7
+Rescue_mCherry_G19_2,G19,mCherry,Adult,Rescue,G19 mCherry Adult Rescue,10,G19 mCherry Adult Rescue 10,Filter,G19 mCherry Adult Rescue 10,Filter
+Sample_rag1_rescue_mCherry_g19_1,G19,mCherry,Adult,Rescue,G19 mCherry Adult Rescue,11,G19 mCherry Adult Rescue 11,Filter,G19 mCherry Adult Rescue 11,Filter
+Mixed_Rescue_mCherry_G19_1,G19,mCherry,Adult,Rescue,G19 mCherry Adult Rescue,9,G19 mCherry Adult Rescue 9,Filter,G19 mCherry Adult Rescue 9,Filter
+G19_mCherry_Neonatal_Rag1,G19,mCherry,Neonatal,Alone Early,G19 mCherry Neonatal Alone Early,4,G19 mCherry Neonatal Alone Early 4,Filter,G19 mCherry Neonatal Alone Early 4,G19 mCherry Neonatal Alone Early 4
+G19_RescueCtrl_mCherry_alone,G19,mCherry,Neonatal,Alone Late,G19 mCherry Neonatal Alone Late,2,G19 mCherry Neonatal Alone Late 2,Filter,G19 mCherry Neonatal Alone Late 2,G19 mCherry Neonatal Alone Late 2
+G19_mCherry_neonatal_Rag1_competition,G19,mCherry,Neonatal,Competition,G19 mCherry Neonatal Competition,6,G19 mCherry Neonatal Competition 6,Filter,G19 mCherry Neonatal Competition 6,Filter
+G19_RescueCtrl_mCherry,G19,mCherry,Neonatal,CtrlRescue,G19 mCherry Neonatal CtrlRescue,3,G19 mCherry Neonatal CtrlRescue 3,Filter,G19 mCherry Neonatal CtrlRescue 3,Filter
+G20_eGFP_Neonatal_Rag1,G20,EGFP,Neonatal,Alone Early,G20 EGFP Neonatal Alone Early,5,G20 EGFP Neonatal Alone Early 5,G20 EGFP Neonatal Alone Early 5,Filter,G20 EGFP Neonatal Alone Early 5
+Sample_rag1_Rescue_Ctrl_G20_eGFP_Pos,G20,EGFP,Neonatal,Alone Late,G20 EGFP Neonatal Alone Late,8,G20 EGFP Neonatal Alone Late 8,G20 EGFP Neonatal Alone Late 8,Filter,G20 EGFP Neonatal Alone Late 8
+G20_eGFP_neonatal_Rag1_competition,G20,EGFP,Neonatal,Competition,G20 EGFP Neonatal Competition,6,G20 EGFP Neonatal Competition 6,G20 EGFP Neonatal Competition 6,Filter,Filter
+Rescue_eGFP_G20_2,G20,EGFP,Neonatal,Rescue,G20 EGFP Neonatal Rescue,10,G20 EGFP Neonatal Rescue 10,G20 EGFP Neonatal Rescue 10,Filter,Filter
+Sample_rag1_rescue_GFP_g20_1,G20,EGFP,Neonatal,Rescue,G20 EGFP Neonatal Rescue,11,G20 EGFP Neonatal Rescue 11,G20 EGFP Neonatal Rescue 11,Filter,Filter
+Sample_rag1_Rescue_Ctrl_G19_mCherry_Neg,Neg G19,mCherry,Adult,Alone Late,Neg G19 mCherry Adult Alone Late,7,Neg G19 mCherry Adult Alone Late 7,Filter,G19 mCherry Adult Alone Late 7,G19 mCherry Adult Alone Late 7
+Sample_rag1_Rescue_Ctrl_G20_eGFP_Neg,Neg G20,EGFP,Neonatal,Alone Late,Neg G20 EGFP Neonatal Alone Late,8,Neg G20 EGFP Neonatal Alone Late 8,G20 EGFP Neonatal Alone Late 8,Filter,G20 EGFP Neonatal Alone Late 8
+Rescue_mouse_2,Neg Mixed,Both,Mixed,Rescue,Neg Mixed Both Mixed Rescue,10,Neg Mixed Both Mixed Rescue 10,Filter,Filter,Filter
+Sample_rag1_rescue_mouse_1,Neg Mixed,Both,Mixed,Rescue,Neg Mixed Both Mixed Rescue,11,Neg Mixed Both Mixed Rescue 11,Filter,Filter,Filter
+Mixed_Rescue_mouse_1,Neg Mixed,Both,Mixed,Rescue,Neg Mixed Both Mixed Rescue,9,Neg Mixed Both Mixed Rescue 9,Filter,Filter,Filter
